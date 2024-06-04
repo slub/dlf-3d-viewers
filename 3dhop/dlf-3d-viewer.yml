@@ -1,0 +1,6 @@
+viewer:
+ supportedModelFormats:
+  - ply
+ url: https://ddev-dfgviewer.ddev.site/fileadmin/dlf_3d_viewers/3dhop/
+ base: main.html
+

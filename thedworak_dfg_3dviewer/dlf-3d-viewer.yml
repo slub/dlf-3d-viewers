@@ -1,0 +1,12 @@
+viewer:
+ supportedModelFormats:
+  - obj
+  - fbx
+  - ply
+  - dae
+  - ifc
+  - stl
+  - xyz
+  - pcd
+  - json
+  - 3ds

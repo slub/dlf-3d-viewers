@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML with JavaScript</title>
+</head>
+<body>
+
+<style>
+    model-viewer {
+        width: 100vw;
+        height: 100vh;
+    }
+</style>
+
+<!-- Import the component -->
+<script type="module" src="{{viewerPath}}modules/model-viewer/3.5.0/model-viewer.min.js"></script>
+
+<!-- Use it like any other HTML element -->
+<model-viewer id="model-viewer-container" src="{{modelUrl}}" alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"  shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+
+</body>
+</html>

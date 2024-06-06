@@ -2,7 +2,7 @@
 
 DLF_3DHOP_VERSION="4.3"
 DLF_ATON_VERSION="3.0.10"
-DLF_KOMPAKKT_VERSION="main"
+DLF_KOMPAKKT_STANDALONE_VERSION="main"
 DLF_MODEL_VIEWER_VERSION="3.5.0"
 DLF_THREEJS_VERSION="r165"
 
@@ -29,4 +29,4 @@ install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_TH
 install_zip_module "https://github.com/phoenixbf/aton/archive/refs/tags/$DLF_ATON_VERSION.zip" "dlf-aton"
 
 install_lib_module "https://ajax.googleapis.com/ajax/libs/model-viewer/$DLF_MODEL_VIEWER_VERSION/model-viewer.min.js" "dlf-model-viewer" "model-viewer/$DLF_MODEL_VIEWER_VERSION"
-install_lib_module "https://raw.githubusercontent.com/Kompakkt/StandaloneViewer/$DLF_KOMPAKKT_VERSION/kompakkt-standalone.min.js" "dlf-kompakkt" "kompakkt-standalone/$DLF_KOMPAKKT_VERSION"
+install_lib_module "https://raw.githubusercontent.com/Kompakkt/StandaloneViewer/$DLF_KOMPAKKT_STANDALONE_VERSION/kompakkt-standalone.min.js" "dlf-kompakkt" "kompakkt-standalone/$DLF_KOMPAKKT_STANDALONE_VERSION"

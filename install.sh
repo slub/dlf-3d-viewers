@@ -29,4 +29,4 @@ install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_TH
 install_zip_module "https://github.com/phoenixbf/aton/archive/refs/tags/$DLF_ATON_VERSION.zip" "dlf-aton"
 
 install_lib_module "https://ajax.googleapis.com/ajax/libs/model-viewer/$DLF_MODEL_VIEWER_VERSION/model-viewer.min.js" "dlf-model-viewer" "model-viewer/$DLF_MODEL_VIEWER_VERSION"
-install_lib_module "https://github.com/Kompakkt/StandaloneViewer/blob/$DLF_KOMPAKKT_VERSION/kompakkt-standalone.min.js" "dlf-kompakkt" "kompakkt-standalone/$DLF_KOMPAKKT_VERSION"
+install_lib_module "https://raw.githubusercontent.com/Kompakkt/StandaloneViewer/$DLF_KOMPAKKT_VERSION/kompakkt-standalone.min.js" "dlf-kompakkt" "kompakkt-standalone/$DLF_KOMPAKKT_VERSION"

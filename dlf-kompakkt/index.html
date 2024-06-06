@@ -5,63 +5,7 @@
 
 </head>
 <body style="width: 100%; height: 100%; margin: 0px;">
-<style>
-    style="width: 100%; height: 100%;"
-</style>
-<script>
-    // workaround implementation instead of using Kompakkt Standalone Viewer cause of https://github.com/Kompakkt/Viewer/issues/51
-    class AppKompakkt extends HTMLElement {
-        constructor() {
-            super();
-            this.attachShadow({ mode: 'open' });
-        }
-
-        connectedCallback() {
-            this.buildSrc();
-        }
-
-        buildSrc() {
-            // Build dataset from allowed properties
-            const allowed = ['instance', 'endpoint', 'resource', 'settings', 'annotations', 'minimal'];
-            const dataset = { standalone: true, minimal: true };
-
-            for (const prop of allowed) {
-                const item = this.attributes.getNamedItem(prop);
-                if (!item) continue;
-                const { nodeName, nodeValue } = item;
-                dataset[nodeName] = nodeValue;
-            }
-
-            // Build url using specified or default instance
-            const url = new URL(dataset.instance ?? 'https://kompakkt.de/viewer/index.html');
-            for (const [key, value] of Object.entries(dataset)) {
-                if (!value) continue;
-
-                // workaround cause Ko
-                if (key === "endpoint") {
-                    url.searchParams.set(key, value);
-                } else {
-                    url.searchParams.set(key, encodeURIComponent(value.toString()));
-                }
-            }
-
-            // Create, configure and attach iframe to shadow DOM
-            const iframe = document.createElement('iframe');
-            iframe.src = url.toString();
-            iframe.allowFullscreen = true;
-            iframe.style.height = '100%';
-            iframe.style.width = '100%';
-            iframe.style.border = 'none';
-            this.shadowRoot.append(iframe);
-
-            this.style.display = 'block';
-            this.style.width = '100%';
-            this.style.height = '100%';
-        }
-    }
-
-    customElements.define('app-kompakkt', AppKompakkt);
-</script>
-<app-kompakkt endpoint="https://ddev-dfgviewer.ddev.site/fileadmin/user_upload/" resource="NeilArmstrong.glb"></app-kompakkt>
+<script type="text/javascript" src="{{viewerPath}}modules/kompakkt-standalone/main/kompakkt-standalone.min.js" defer></script>
+<app-kompakkt endpoint="https://zenodo.org/api/files/" resource="df31cc16-0a54-4599-89e9-0dd4ada4016d/b5df7cd550f64e818943ad96fff7e902.glb" style="width: 100%; height: 100%;"></app-kompakkt>
 </body>
 </html>

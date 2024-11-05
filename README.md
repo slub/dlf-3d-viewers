@@ -1,5 +1,17 @@
 # DLF 3D Viewers
 
+ * [Installation](#installation)
+ * [Integrations](#integrations)
+   * [dlf-3dhop](#dlf-3dhop)
+   * [dlf-aton](#dlf-aton)
+   * [dlf-kompakkt](#dlf-kompakkt)
+   * [dlf-model-viewer](#dlf-model-viewer)
+   * [dlf-thedworak-dfg-3dviewer](#dlf-thedworak-dfg-3dviewer)
+   * [dlf-threejs](#dlf-threejs)
+ * [Maintainer](#maintainer)
+
+This repository contains integrations of existing 3D viewers or reference implementations of 3D viewers for embedding in Kitodo.Presentation or DFG-Viewer.
+
 ## Installation
 
 - Clone repository or download source code.
@@ -65,8 +77,11 @@ Supported model formats: .ply
 
 ![image](https://github.com/user-attachments/assets/ed8a6993-1c31-45dd-8b02-88652979ce53)
 
+## Further information
+
+- Projekt DFG 3D Viewer (2nd phase) | Infrastructure for Digital 3D Reconstructions - https://architekturinstitut.hs-mainz.de/projects/dfg-3d-viewer-2nd-phase
+
 ## Maintainer
-
-If you have any questions or encounter any problems, please do not hesitate to contact us.
-
-- [Markus Weigelt](https://github.com/markusweigelt)
+- [Hochschule Mainz](https://architekturinstitut.hs-mainz.de/)
+- [Friedrich-Schiller-Universität Jena](https://www.uni-jena.de/)
+- [Sächsische Landesbibliothek – Staats- und Universitätsbibliothek Dresden](https://www.slub-dresden.de/)

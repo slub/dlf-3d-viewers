@@ -80,7 +80,8 @@ Supported model formats: .ply
 
 ## Further information
 
-- Projekt DFG 3D Viewer (2nd phase) | Infrastructure for Digital 3D Reconstructions - https://architekturinstitut.hs-mainz.de/projects/dfg-3d-viewer-2nd-phase
+- [DFG 3D-Viewer](https://dfg-viewer.de/dfg-3d-viewer-2)
+- [Infrastructure for Digital 3D Reconstructions](https://architekturinstitut.hs-mainz.de/projects/dfg-3d-viewer-2nd-phase)
 
 ## Maintainer
 - [Hochschule Mainz](https://architekturinstitut.hs-mainz.de/)

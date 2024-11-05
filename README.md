@@ -42,6 +42,14 @@ Kompakkt Standalone Viewer
 
 ![image](https://github.com/user-attachments/assets/14345cce-a32d-4c6e-89f8-d63909e3f35e)
 
+### dlf-thedworak-dfg-3dviewer
+
+3D Viewer implementation of Daniel Dworak Hochschule Mainz 
+
+![image](https://github.com/user-attachments/assets/7501684c-059c-45f7-8d0b-4929ac55852f)
+
+[GitHub thedworak/dfg_3dviewer](https://github.com/thedworak/dfg_3dviewer)
+
 ### dlf-threejs
 
 Custom Implementation of Three.js

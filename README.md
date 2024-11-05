@@ -41,7 +41,7 @@ Supported model formats: .glb, .babylon, .gltf, .obj, .stl
 
 ### dlf-model-viewer
 
-Integration of [<model-viewer>](https://modelviewer.dev/). 
+Integration of the [model-viewer](https://modelviewer.dev/). 
 
 *Kitodo.Presentation an thus DFG-Viewer includes this as a default viewer now*
 

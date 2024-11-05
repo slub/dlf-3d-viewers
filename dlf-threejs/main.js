@@ -1,7 +1,7 @@
-import * as THREE from './modules/three.js-r165/build/three.module.js';
-import {OrbitControls} from './modules/three.js-r165/examples/jsm/controls/OrbitControls.js'
-import {PLYLoader} from './modules/three.js-r165/examples/jsm/loaders/PLYLoader.js'
-import Stats from './modules/three.js-r165/examples/jsm/libs/stats.module.js'
+import * as THREE from './modules/three.js-r170/build/three.module.js';
+import {OrbitControls} from './modules/three.js-r170/examples/jsm/controls/OrbitControls.js'
+import {PLYLoader} from './modules/three.js-r170/examples/jsm/loaders/PLYLoader.js'
+import Stats from './modules/three.js-r170/examples/jsm/libs/stats.module.js'
 
 const scene = new THREE.Scene()
 scene.background = new THREE.Color();

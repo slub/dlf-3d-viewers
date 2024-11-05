@@ -56,6 +56,8 @@ Custom Implementation of Three.js
 
 [three.js](https://threejs.org/)
 
+![image](https://github.com/user-attachments/assets/ed8a6993-1c31-45dd-8b02-88652979ce53)
+
 ## Maintainer
 
 If you have any questions or encounter any problems, please do not hesitate to contact us.

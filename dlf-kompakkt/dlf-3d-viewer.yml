@@ -1,4 +1,7 @@
 viewer:
- supportedModelFormats:
+ supportedModelFormats: # https://kompakkt.github.io/Documentation/uploading-objects/introduction/
   - glb
-
+  - babylon
+  - gltf
+  - obj
+  - stl

@@ -19,9 +19,13 @@ These are integrations of 3D viewers or custom 3D viewer implementations base on
 
 [3DHOP](https://3dhop.net/)
 
+![image](https://github.com/user-attachments/assets/153f06ab-855b-4989-b06a-73cef84cc0f0)
+
 ### dlf-aton
 
 [ATON](https://osiris.itabc.cnr.it/aton/)
+
+![image](https://github.com/user-attachments/assets/3e46f16d-e201-4656-930e-93aa547f3342)
 
 ### dlf-kompakkt
 
@@ -30,12 +34,13 @@ Kompakkt Standalone Viewer
 [Kompakkt](https://kompakkt.de/)
 [GitHub Standalone Viewer](https://github.com/Kompakkt/StandaloneViewer)
 
+![image](https://github.com/user-attachments/assets/1fc458e8-fa48-4d69-b8dc-a1d3cbe46138)
+
 ### dlf-model-viewer
 
 [<model-viewer>](https://modelviewer.dev/)
 
 ![image](https://github.com/user-attachments/assets/14345cce-a32d-4c6e-89f8-d63909e3f35e)
-
 
 ### dlf-threejs
 

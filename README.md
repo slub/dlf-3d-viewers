@@ -8,6 +8,7 @@
    * [dlf-model-viewer](#dlf-model-viewer)
    * [dlf-thedworak-dfg-3dviewer](#dlf-thedworak-dfg-3dviewer)
    * [dlf-threejs](#dlf-threejs)
+ * [Further information](#further-information)
  * [Maintainer](#maintainer)
 
 This repository contains integrations of existing 3D viewers or reference implementations of 3D viewers for embedding in Kitodo.Presentation or DFG-Viewer.

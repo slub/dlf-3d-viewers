@@ -1,4 +1,4 @@
-# DLF 3D Viewers
+# 3D viewer integrations for embedding in Kitodo.Presentation or DFG-Viewer
 
  * [Installation](#installation)
  * [Integrations](#integrations)

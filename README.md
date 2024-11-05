@@ -1,4 +1,4 @@
-# 3D viewer integrations for embedding in Kitodo.Presentation or DFG-Viewer
+# 3D viewer integrations for Kitodo.Presentation or DFG-Viewer
 
  * [Installation](#installation)
  * [Integrations](#integrations)

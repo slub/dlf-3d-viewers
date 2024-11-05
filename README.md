@@ -17,44 +17,51 @@ These are integrations of 3D viewers or custom 3D viewer implementations base on
 
 ### dlf-3dhop
 
-[3DHOP](https://3dhop.net/)
+Integration of [3DHOP](https://3dhop.net/) framework.
+
+Supported model formats: .ply, .obj
 
 ![image](https://github.com/user-attachments/assets/153f06ab-855b-4989-b06a-73cef84cc0f0)
 
 ### dlf-aton
 
-[ATON](https://osiris.itabc.cnr.it/aton/)
+Integration of [ATON](https://osiris.itabc.cnr.it/aton/) framework.
+
+Supported model formats: .glb, .gltf
 
 ![image](https://github.com/user-attachments/assets/3e46f16d-e201-4656-930e-93aa547f3342)
 
 ### dlf-kompakkt
 
-Kompakkt Standalone Viewer
+Integration of [Kompakkt](https://kompakkt.de/) using the [Kompakkt Standalone Viewer](https://github.com/Kompakkt/StandaloneViewer).
 
-[Kompakkt](https://kompakkt.de/)
-[GitHub Standalone Viewer](https://github.com/Kompakkt/StandaloneViewer)
+Supported model formats: .glb, .babylon, .gltf, .obj, .stl
 
 ![image](https://github.com/user-attachments/assets/1fc458e8-fa48-4d69-b8dc-a1d3cbe46138)
 
 ### dlf-model-viewer
 
-[<model-viewer>](https://modelviewer.dev/)
+Integration of [<model-viewer>](https://modelviewer.dev/). 
+
+*Kitodo.Presentation an thus DFG-Viewer includes this as a default viewer now*
+
+Supported model formats: .glb, .gltf
 
 ![image](https://github.com/user-attachments/assets/14345cce-a32d-4c6e-89f8-d63909e3f35e)
 
 ### dlf-thedworak-dfg-3dviewer
 
-3D Viewer implementation of Daniel Dworak Hochschule Mainz 
+Integration of 3D Viewer implementation [thedworak/dfg_3dviewer](https://github.com/thedworak/dfg_3dviewer) of Daniel Dworak Hochschule Mainz.
+
+Supported model formats: .obj, .dae, .fbx, .ply, .ifc, .stl, .xyz, .json, .3ds, .gltf
 
 ![image](https://github.com/user-attachments/assets/7501684c-059c-45f7-8d0b-4929ac55852f)
 
-[GitHub thedworak/dfg_3dviewer](https://github.com/thedworak/dfg_3dviewer)
-
 ### dlf-threejs
 
-Custom Implementation of Three.js
+Integration of a minimal implementation of [three.js](https://threejs.org/) with ply model loader.
 
-[three.js](https://threejs.org/)
+Supported model formats: .ply
 
 ![image](https://github.com/user-attachments/assets/ed8a6993-1c31-45dd-8b02-88652979ce53)
 

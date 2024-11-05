@@ -13,7 +13,7 @@ For more informations regarding embedding this folder into Kitodo.Presentation a
 
 These are integrations of 3D viewers or custom 3D viewer implementations base on a JavaScript 3D library (e.g. three.js) which have been prepared for Kitodo.Presentation and thus for the DFG-Viewer.
 
-DLF prefix stands for “Digital Library Framework” and is the key of the TYPO3 extension “Kitodo.Presentation”. The name can of the integration can be chosen freely for your [custom viewer](https://kitodo.github.io/kitodo-presentation/Developers/Embedded3DViewer.html#Custom%20Viewer).
+*DLF prefix stands for “Digital Library Framework” and is the key of the TYPO3 extension “Kitodo.Presentation”. The name can of the integration can be chosen freely for your [custom viewer](https://kitodo.github.io/kitodo-presentation/Developers/Embedded3DViewer.html#Custom%20Viewer).*
 
 ### dlf-3dhop
 

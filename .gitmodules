@@ -1,0 +1,3 @@
+[submodule "dlf-thedworak-dfg-3dviewer/modules"]
+	path = dlf-thedworak-dfg-3dviewer/modules
+	url = https://github.com/thedworak/dfg_3dviewer.git

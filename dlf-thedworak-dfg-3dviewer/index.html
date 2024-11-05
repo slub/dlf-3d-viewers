@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <base target="_blank">
+    <title>Three.js 3D-DFG-Viewer</title>
+    <link rel="stylesheet" href="{{viewerPath}}modules/viewer/css/spinner.css">
+    <link rel="stylesheet" href="{{viewerPath}}modules/viewer/css/main.css">
+</head>
+<body>
+<style>
+    html,body, #DFG_3DViewer {
+        height: 100%;
+    }
+</style>
+<script type="module" src="{{viewerPath}}modules/viewer/jquery-3.6.0.min.js"></script>
+<script src="{{viewerPath}}modules/viewer/toastify.js"></script>
+<script src="{{viewerPath}}modules/viewer/spinner/main.js"></script>
+<script type="module" src="{{viewerPath}}modules/viewer/main.js"></script>
+<div id="DFG_3DViewer" 3d="{{modelUrl}}" basePath="{{viewerPath}}modules/viewer"></div>
+</body>
+</html>
+

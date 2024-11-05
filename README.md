@@ -34,6 +34,9 @@ Kompakkt Standalone Viewer
 
 [<model-viewer>](https://modelviewer.dev/)
 
+![image](https://github.com/user-attachments/assets/14345cce-a32d-4c6e-89f8-d63909e3f35e)
+
+
 ### dlf-threejs
 
 Custom Implementation of Three.js

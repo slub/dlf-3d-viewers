@@ -7,7 +7,7 @@
 
 After these steps, you will have a folder with the respective viewer integration, its dependencies and resources as well as the `dlf-3d-viewer.yml` configuration file required for the integration.
 
-Please read the [Embedded 3D Viewer](https://kitodo.github.io/kitodo-presentation/Developers/Embedded3DViewer.html) documentation for more informations regarding embedding this folder into Kitodo.Presentation and DFG-Viewer 
+For more informations regarding embedding this folder into Kitodo.Presentation and DFG-Viewer, read the [Embedded 3D Viewer](https://kitodo.github.io/kitodo-presentation/Developers/Embedded3DViewer.html) documentation.
 
 ## Integrations
 

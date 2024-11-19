@@ -18,9 +18,10 @@ jobs:
         with:
           repository: 'markusweigelt/dfg-viewer'
           ref: 'docker'
+          path: '../dfg-viewer'
 
       - name: Prepare environment
-        working-directory: ./Docker
+        working-directory: ../dfg-viewer/Docker
         run: |
           # Rename example .env file
           mv .env.example .env
@@ -29,7 +30,7 @@ jobs:
           sed -i "s|ghcr.io/slub/dfg-viewer|ghcr.io/markusweigelt/dfg-viewer|g" .env
 
       - name: Run using Docker Compose
-        working-directory: ./Docker
+        working-directory: ../dfg-viewer/Docker
         run: |
           docker compose up -d
 

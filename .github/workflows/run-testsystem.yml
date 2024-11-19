@@ -23,7 +23,7 @@ jobs:
           mv .env.example .env
           
           # overwrite image path
-          sed -i "s|ghcr.io/slub/dfg-viewer|ghcr.io/markusweigelt/dfg-viewer/|g" .env
+          sed -i "s|ghcr.io/slub/dfg-viewer|ghcr.io/markusweigelt/dfg-viewer|g" .env
 
       - name: Run using Docker Compose
         working-directory: ./Docker

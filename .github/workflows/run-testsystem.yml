@@ -36,15 +36,15 @@ jobs:
 
       - name: Install 3D viewer integrations
         run: |
-          docker exec -u root -i dfg-viewer-app-1 bash 
-          apt-get update && apt-get install unzip 
-          wget "https://github.com/slub/dlf-3d-viewers/archive/refs/heads/main.zip" -O /tmp/dlf-3d-viewers.zip
-          cd /var/www/html/dfg-viewer/public/fileadmin
-          unzip /tmp/dlf-3d-viewers.zip
-          mv dlf-3d-viewers-main dlf_3d_viewers
-          rm /tmp/dlf-3d-viewers.zip
-          sh dlf_3d_viewers/install.sh
-          chown -R www-data:www-data dlf_3d_viewers
+          docker exec -u root -i dfg-viewer-app-1 sh -c "\
+          apt-get update && apt-get install unzip \
+          && wget "https://github.com/slub/dlf-3d-viewers/archive/refs/heads/main.zip" -O /tmp/dlf-3d-viewers.zip \
+          && cd /var/www/html/dfg-viewer/public/fileadmin\
+          && unzip /tmp/dlf-3d-viewers.zip\
+          && mv dlf-3d-viewers-main dlf_3d_viewers\
+          && rm /tmp/dlf-3d-viewers.zip\
+          && sh dlf_3d_viewers/install.sh\
+          && chown -R www-data:www-data dlf_3d_viewers"
 
       # installation routine of ngrok https://dashboard.ngrok.com/get-started/setup/linux
       - name: Install ngrok

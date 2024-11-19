@@ -7,8 +7,10 @@ DLF_MODEL_VIEWER_VERSION="4.0.0"
 DLF_THEDWORAK_DFG_3DVIEWER_VERSION="main"
 DLF_THREEJS_VERSION="r170"
 
+SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
+
 install_zip_module() {
-  local MODULES_DIR_PATH="./$2/modules"
+  local MODULES_DIR_PATH="$SCRIPT_DIR/$2/modules"
   rm -rf $MODULES_DIR_PATH
   local MODULE_FILE_PATH="$MODULES_DIR_PATH/module.zip"
   mkdir -p $MODULES_DIR_PATH
@@ -18,7 +20,7 @@ install_zip_module() {
 }
 
 install_lib_module() {
-  local MODULES_DIR_PATH="./$2/modules/"
+  local MODULES_DIR_PATH="$SCRIPT_DIR/$2/modules/"
   rm -rf $MODULES_DIR_PATH
   local MODULE_PATH="$MODULES_DIR_PATH/$3/"
   mkdir -p $MODULE_PATH

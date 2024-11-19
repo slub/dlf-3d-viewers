@@ -1,5 +1,6 @@
 viewer:
  supportedModelFormats:
   - ply
+  - obj
  base: main.html
 

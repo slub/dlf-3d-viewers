@@ -2,5 +2,5 @@ version: 2
 
 tunnels:
   app:
-    addr: 8080
+    addr: 80
     proto: http

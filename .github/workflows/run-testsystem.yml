@@ -29,7 +29,7 @@ jobs:
           # overwrite image path
           sed -i "s|ghcr.io/slub/dfg-viewer|ghcr.io/markusweigelt/dfg-viewer|g" .env
 
-      - name: Run using Docker Compose
+      - name: Run DFG-Viewer using Docker Compose
         working-directory: dfg-viewer/Docker
         run: |
           docker compose up -d
@@ -56,7 +56,8 @@ jobs:
           && sudo apt update \
           && sudo apt install ngrok
 
-      - name: Run ngrok
+      - name: Run ngrok to make DFG-Viewer available
+        timeout-minutes: 60
         run: |
           ngrok config add-authtoken ${{ secrets.NGROK_AUTH_TOKEN }} \
           && ngrok http --url=bear-genuine-hookworm.ngrok-free.app 80

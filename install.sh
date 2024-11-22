@@ -11,19 +11,19 @@ SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 install_zip_module() {
   local MODULES_DIR_PATH="$SCRIPT_DIR/$2/modules"
-  rm -rf $MODULES_DIR_PATH
+  rm -rf "$MODULES_DIR_PATH"
   local MODULE_FILE_PATH="$MODULES_DIR_PATH/module.zip"
-  mkdir -p $MODULES_DIR_PATH
+  mkdir -p "$MODULES_DIR_PATH"
   wget -v "$1" -O "$MODULE_FILE_PATH"
-  unzip -d $MODULES_DIR_PATH $MODULE_FILE_PATH
-  rm $MODULE_FILE_PATH
+  unzip -d "$MODULES_DIR_PATH" "$MODULE_FILE_PATH"
+  rm "$MODULE_FILE_PATH"
 }
 
 install_lib_module() {
   local MODULES_DIR_PATH="$SCRIPT_DIR/$2/modules/"
-  rm -rf $MODULES_DIR_PATH
+  rm -rf "$MODULES_DIR_PATH"
   local MODULE_PATH="$MODULES_DIR_PATH/$3/"
-  mkdir -p $MODULE_PATH
+  mkdir -p "$MODULE_PATH"
   wget -v "$1" -P "$MODULE_PATH"
 }
 

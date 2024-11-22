@@ -66,9 +66,9 @@ Supported model formats: .glb, .gltf
 
 Integration of 3D Viewer implementation [thedworak/dfg_3dviewer](https://github.com/thedworak/dfg_3dviewer) of Daniel Dworak Hochschule Mainz.
 
-Supported model formats: .obj, .dae, .fbx, .ply, .ifc, .stl, .xyz, .json, .3ds, .gltf
+Supported model formats: .obj, .dae, .fbx, .ply, .ifc, .stl, .xyz, .json, .3ds, .gltf, .glb
 
-![image](https://github.com/user-attachments/assets/7501684c-059c-45f7-8d0b-4929ac55852f)
+![image](https://github.com/user-attachments/assets/25092f15-a9c7-4564-96f8-342b341f2793)
 
 ### dlf-threejs
 

@@ -63,6 +63,6 @@ jobs:
           ngrok config add-authtoken ${{ secrets.NGROK_AUTH_TOKEN }}
 
           # set timeout for ngrok command and exit without failure of the current step
-          timeout 2m ngrok http --url=bear-genuine-hookworm.ngrok-free.app 80 \
+          timeout 60m ngrok http --url=bear-genuine-hookworm.ngrok-free.app 80 \
           || ( [[ $? -eq 124 ]] && echo "WARNING: Timeout reached, but step succeed" )
           

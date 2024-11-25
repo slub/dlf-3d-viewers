@@ -107,11 +107,11 @@ Under `Actions` tab above, you will find the workflow named `Run DFG-Viewer test
 
 ![image](https://github.com/user-attachments/assets/c07eb48b-1186-4655-a966-10c35094c385)
 
-It takes a moment (1-2 minutes) for the starting workflow to be displayed. Reloading the page can make it appear faster.
+It takes a moment for the starting workflow to be displayed. Reloading the page can make it appear faster.
 
 ![image](https://github.com/user-attachments/assets/c336c461-f9d8-4979-b998-725b8d8fbd02)
 
-After a short time, the test system is accessible at the URL https://bear-genuine-hookworm.ngrok-free.app/ for one hour. After that, the test system will be stopped again.
+After a short time (1-2 minutes), the test system was generated and is accessible at the URL https://bear-genuine-hookworm.ngrok-free.app/ for one hour. After that, the test system will be automatically stopped.
 
 ## Further information
 

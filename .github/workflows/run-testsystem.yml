@@ -50,7 +50,7 @@ jobs:
       - name: Install PLY 3D model
         run: |
           docker exec -u root -i dfg-viewer-app-1 sh -c "\
-          && wget "https://github.com/cnr-isti-vclab/3DHOP/raw/refs/heads/master/examples/models/gargo.ply" -O /var/www/html/dfg-viewer/public/fileadmin/models/gargo.ply \
+          wget "https://github.com/cnr-isti-vclab/3DHOP/raw/refs/heads/master/examples/models/gargo.ply" -O /var/www/html/dfg-viewer/public/fileadmin/models/gargo.ply \
           && chown -R www-data:www-data models"
           
       # installation routine of ngrok https://dashboard.ngrok.com/get-started/setup/linux

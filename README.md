@@ -8,6 +8,7 @@
    * [dlf-model-viewer](#dlf-model-viewer)
    * [dlf-thedworak-dfg-3dviewer](#dlf-thedworak-dfg-3dviewer)
    * [dlf-threejs](#dlf-threejs)
+ * [DFG 3D-Viewer test system](#dfg-3d-viewer-test-system)
  * [Further information](#further-information)
  * [Maintainer](#maintainer)
 
@@ -78,7 +79,7 @@ Supported model formats: .ply
 
 ![image](https://github.com/user-attachments/assets/ed8a6993-1c31-45dd-8b02-88652979ce53)
 
-## DFG 3D-Viewer Testsystem
+## DFG 3D-Viewer test system
 
 If you have write permissions for this repository, you can start a DFG Viewer test system that includes the latest versions of the available integrations. **Please check beforehand if the test system https://bear-genuine-hookworm.ngrok-free.app/ is already running.**
 

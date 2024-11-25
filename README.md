@@ -73,7 +73,11 @@ Supported model formats: .glb, .gltf
 
 #### Test
 
+Default of viewer Kitodo.Presentation and with that DFG-Viewer
 https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml
+
+Use the model viewer from the Integration repository
+https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-model-viewer
 
 ### dlf-thedworak-dfg-3dviewer
 

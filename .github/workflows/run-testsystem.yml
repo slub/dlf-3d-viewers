@@ -28,6 +28,8 @@ jobs:
           
           # overwrite image path
           sed -i "s|ghcr.io/slub/dfg-viewer|ghcr.io/markusweigelt/dfg-viewer|g" .env
+          # overwirte trusted host pattern config with ngrok url
+          sed -i "s|APP_T3_CONFIG_SYS_TRUSTEDHOSTSPATTERN=""|APP_T3_CONFIG_SYS_TRUSTEDHOSTSPATTERN="bear-genuine-hookworm.ngrok-free.app"|g" .env
 
       - name: Run DFG-Viewer using Docker Compose
         working-directory: dfg-viewer/Docker

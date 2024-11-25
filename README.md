@@ -78,6 +78,20 @@ Supported model formats: .ply
 
 ![image](https://github.com/user-attachments/assets/ed8a6993-1c31-45dd-8b02-88652979ce53)
 
+## DFG 3D-Viewer Testsystem
+
+If you have write permissions for this repository, you can start a DFG Viewer test system that includes the latest versions of the available integrations. **Please check beforehand if the test system https://bear-genuine-hookworm.ngrok-free.app/ is already running.**
+
+Under `Actions` tab above, you will find the workflow named `Run DFG-Viewer test system over ngrok`. By clicking on it, a `Run workflow` button will appear in the upper-right area above the list of recent workflow executions. When clicking on this button, a popup opens. Click the green button with the label `Run workflow` in the popup.
+
+![image](https://github.com/user-attachments/assets/c07eb48b-1186-4655-a966-10c35094c385)
+
+It takes a moment for the starting workflow to be displayed. Reloading the page can make it appear faster.
+
+![image](https://github.com/user-attachments/assets/c336c461-f9d8-4979-b998-725b8d8fbd02)
+
+After a short time, the test system is accessible at the URL https://bear-genuine-hookworm.ngrok-free.app/ for one hour. After that, the test system will be stopped again.
+
 ## Further information
 
 - [DFG 3D-Viewer](https://dfg-viewer.de/dfg-3d-viewer-2)

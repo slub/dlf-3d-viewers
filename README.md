@@ -45,6 +45,10 @@ Supported model formats: .glb, .gltf
 
 ![image](https://github.com/user-attachments/assets/3e46f16d-e201-4656-930e-93aa547f3342)
 
+#### Test
+
+https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-aton
+
 ### dlf-kompakkt
 
 Integration of [Kompakkt](https://kompakkt.de/) using the [Kompakkt Standalone Viewer](https://github.com/Kompakkt/StandaloneViewer).
@@ -52,6 +56,10 @@ Integration of [Kompakkt](https://kompakkt.de/) using the [Kompakkt Standalone V
 Supported model formats: .glb, .babylon, .gltf, .obj, .stl
 
 ![image](https://github.com/user-attachments/assets/1fc458e8-fa48-4d69-b8dc-a1d3cbe46138)
+
+#### Test
+
+https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-kompakkt
 
 ### dlf-model-viewer
 
@@ -63,6 +71,10 @@ Supported model formats: .glb, .gltf
 
 ![image](https://github.com/user-attachments/assets/14345cce-a32d-4c6e-89f8-d63909e3f35e)
 
+#### Test
+
+https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml
+
 ### dlf-thedworak-dfg-3dviewer
 
 Integration of 3D Viewer implementation [thedworak/dfg_3dviewer](https://github.com/thedworak/dfg_3dviewer) of Daniel Dworak Hochschule Mainz.
@@ -70,6 +82,10 @@ Integration of 3D Viewer implementation [thedworak/dfg_3dviewer](https://github.
 Supported model formats: .obj, .dae, .fbx, .ply, .ifc, .stl, .xyz, .json, .3ds, .gltf, .glb
 
 ![image](https://github.com/user-attachments/assets/25092f15-a9c7-4564-96f8-342b341f2793)
+
+#### Test
+
+https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-thedworak-dfg-3dviewer
 
 ### dlf-threejs
 

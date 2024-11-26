@@ -30,7 +30,6 @@ jobs:
           sed -i "s|ghcr.io/slub/dfg-viewer|ghcr.io/markusweigelt/dfg-viewer|g" .env
           # overwrite trusted host pattern config with ngrok url
           sed -i "s|APP_T3_CONFIG_SYS_TRUSTEDHOSTSPATTERN=\"\"|APP_T3_CONFIG_SYS_TRUSTEDHOSTSPATTERN=\"bear-genuine-hookworm\\\.ngrok-free\\\.app\"|g" .env
-          cat .env
 
       - name: Run DFG-Viewer using Docker Compose
         working-directory: dfg-viewer/Docker
@@ -48,6 +47,11 @@ jobs:
           && rm /tmp/dlf-3d-viewers.zip\
           && sh dlf_3d_viewers/install.sh\
           && chown -R www-data:www-data dlf_3d_viewers"
+
+      # workaround disable the correct referrer check (not recommended; there might be a better solution)
+      # The problem was that when the user tried to log in to the backend, this check prevented them from doing so
+      # more informations https://docs.typo3.org/m/typo3/reference-exceptions/main/en-us/Exceptions/1588095935.html
+      - name: Disable referrer check of TYPO3
 
       # workaround for issue https://github.com/slub/dlf-3d-viewers/issues/93
       - name: Install PLY 3D model

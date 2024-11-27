@@ -61,7 +61,7 @@ jobs:
         run: |
           docker exec -u root -i dfg-viewer-app-1 sh -c "\
           mkdir -p /var/www/html/dfg-viewer/public/fileadmin/models\
-          && wget \"https://github.com/cnr-isti-vclab/3DHOP/raw/refs/heads/master/examples/models/gargo.ply\"\
+          && wget "https://github.com/cnr-isti-vclab/3DHOP/raw/refs/heads/master/examples/models/gargo.ply" -P /var/www/html/dfg-viewer/public/fileadmin/models\
           && chown -R www-data:www-data /var/www/html/dfg-viewer/public/fileadmin/models"
           
       # installation routine of ngrok https://dashboard.ngrok.com/get-started/setup/linux

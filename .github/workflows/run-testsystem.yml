@@ -48,17 +48,20 @@ jobs:
           && sh dlf_3d_viewers/install.sh\
           && chown -R www-data:www-data dlf_3d_viewers"
 
-      # workaround disable the correct referrer check (not recommended; there might be a better solution)
+      # workaround disable the correct referrer check (not recommended for production but it is a disposable system)
       # The problem was that when the user tried to log in to the backend, this check prevented them from doing so
       # more informations https://docs.typo3.org/m/typo3/reference-exceptions/main/en-us/Exceptions/1588095935.html
-      # - name: Disable referrer check of TYPO3
-
+      - name: Disable referrer check of TYPO3
+        run: |
+          docker exec -u root -i dfg-viewer-app-1 sh -c "\
+          sed -i \"s/'features' => \[/&'security.backend.enforceReferrer' => false,/\" /var/www/html/dfg-viewer/config/system/settings.php"
+          
       # workaround for issue https://github.com/slub/dlf-3d-viewers/issues/93
       - name: Install PLY 3D model
         run: |
           docker exec -u root -i dfg-viewer-app-1 sh -c "\
           mkdir -p /var/www/html/dfg-viewer/public/fileadmin/models\
-          && wget "https://github.com/cnr-isti-vclab/3DHOP/raw/refs/heads/master/examples/models/gargo.ply"\
+          && wget \"https://github.com/cnr-isti-vclab/3DHOP/raw/refs/heads/master/examples/models/gargo.ply\"\
           && chown -R www-data:www-data /var/www/html/dfg-viewer/public/fileadmin/models"
           
       # installation routine of ngrok https://dashboard.ngrok.com/get-started/setup/linux

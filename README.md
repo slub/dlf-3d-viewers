@@ -37,6 +37,10 @@ Supported model formats: .ply, .obj
 
 ![image](https://github.com/user-attachments/assets/153f06ab-855b-4989-b06a-73cef84cc0f0)
 
+#### Test
+
+https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[model]=https://bear-genuine-hookworm.ngrok-free.app/fileadmin/models/gargo.ply&tx_dlf[viewer]=dlf-3dhop
+
 ### dlf-aton
 
 Integration of [ATON](https://osiris.itabc.cnr.it/aton/) framework.
@@ -98,6 +102,10 @@ Integration of a minimal implementation of [three.js](https://threejs.org/) with
 Supported model formats: .ply
 
 ![image](https://github.com/user-attachments/assets/ed8a6993-1c31-45dd-8b02-88652979ce53)
+
+#### Test
+
+https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[model]=https://bear-genuine-hookworm.ngrok-free.app/fileadmin/models/gargo.ply&tx_dlf[viewer]=dlf-threejs
 
 ## DFG 3D-Viewer test system
 

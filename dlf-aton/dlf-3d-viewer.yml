@@ -1,5 +1,5 @@
 viewer:
+ name: ATON
  supportedModelFormats:
   - glb
-  - gltf
-
+  - glb

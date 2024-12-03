@@ -1,3 +1,4 @@
 viewer:
+ name: Simple Three.js Viewer
  supportedModelFormats:
   - ply

@@ -1,4 +1,5 @@
 viewer:
+ name: Model Viewer
  supportedModelFormats:
   - glb
   - gltf

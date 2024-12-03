@@ -1,4 +1,5 @@
 viewer:
+ name: 3D DFG Viewer (thedworak)
  supportedModelFormats:
   - obj
   - dae

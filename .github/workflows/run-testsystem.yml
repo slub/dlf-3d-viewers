@@ -24,9 +24,7 @@ jobs:
         run: |
           # Rename example .env file
           mv .env.example .env
-          
-          # overwrite image path
-          sed -i "s|ghcr.io/slub/dfg-viewer|ghcr.io/markusweigelt/dfg-viewer|g" .env
+
           # overwrite trusted host pattern config with ngrok url
           sed -i "s|APP_T3_CONFIG_SYS_TRUSTEDHOSTSPATTERN=\"\"|APP_T3_CONFIG_SYS_TRUSTEDHOSTSPATTERN=\"bear-genuine-hookworm\\\.ngrok-free\\\.app\"|g" .env
 

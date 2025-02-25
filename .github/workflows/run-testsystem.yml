@@ -16,8 +16,7 @@ jobs:
       - name: Checkout DFG-Viewer Repository
         uses: actions/checkout@v4
         with:
-          repository: 'markusweigelt/dfg-viewer'
-          ref: 'docker'
+          repository: 'slub/dfg-viewer'
           path: 'dfg-viewer'
 
       - name: Prepare environment

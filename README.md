@@ -3,10 +3,10 @@
  * [Installation](#installation)
  * [Integrations](#integrations)
    * [dlf-3dhop](#dlf-3dhop)
+   * [dlf-ai-mainz-3dviewer](#dlf-ai-mainz-3dviewer)
    * [dlf-aton](#dlf-aton)
    * [dlf-kompakkt](#dlf-kompakkt)
    * [dlf-model-viewer](#dlf-model-viewer)
-   * [dlf-thedworak-dfg-3dviewer](#dlf-thedworak-dfg-3dviewer)
    * [dlf-threejs](#dlf-threejs)
  * [DFG 3D-Viewer test system](#dfg-3d-viewer-test-system)
  * [Further information](#further-information)
@@ -83,7 +83,7 @@ https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu
 Use the model viewer from the Integration repository
 https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-model-viewer
 
-### dlf-thedworak-dfg-3dviewer
+### dlf-ai-mainz-3dviewer
 
 Integration of 3D Viewer implementation [thedworak/dfg_3dviewer](https://github.com/thedworak/dfg_3dviewer) of Daniel Dworak Hochschule Mainz.
 
@@ -93,7 +93,7 @@ Supported model formats: .obj, .dae, .fbx, .ply, .ifc, .stl, .xyz, .json, .3ds, 
 
 #### Test
 
-https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-thedworak-dfg-3dviewer
+https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-ai-mainz-3dviewer
 
 ### dlf-threejs
 

@@ -1,0 +1,5 @@
+viewer:
+ name: 3DView for VR Glasses
+ supportedModelFormats:
+  - glb
+  - gltf

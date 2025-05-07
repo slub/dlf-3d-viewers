@@ -5,6 +5,8 @@
    * [dlf-3dhop](#dlf-3dhop)
    * [dlf-ai-mainz-3dviewer](#dlf-ai-mainz-3dviewer)
    * [dlf-aton](#dlf-aton)
+   * [dlf-jena-3dviewer-holopyramid](#dlf-jena-3dviewer-holopyramid)
+   * [dlf-jena-3dviewer-vrglasses](#dlf-jena-3dviewer-vrglasses)
    * [dlf-kompakkt](#dlf-kompakkt)
    * [dlf-model-viewer](#dlf-model-viewer)
    * [dlf-threejs](#dlf-threejs)
@@ -52,6 +54,30 @@ Supported model formats: .glb, .gltf
 #### Test
 
 https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-aton
+
+### dlf-jena-3dviewer-holopyramid
+
+Integration of [ATON](https://osiris.itabc.cnr.it/aton/) framework.
+
+Supported model formats: .glb, .gltf
+
+![image](https://github.com/user-attachments/assets/3e46f16d-e201-4656-930e-93aa547f3342)
+
+#### Test
+
+https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-jena-3dviewer-holopyramid
+
+### dlf-jena-3dviewer-vrglasses
+
+Integration of [ATON](https://osiris.itabc.cnr.it/aton/) framework.
+
+Supported model formats: .glb, .gltf
+
+![image](https://github.com/user-attachments/assets/3e46f16d-e201-4656-930e-93aa547f3342)
+
+#### Test
+
+https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-jena-3dviewer-vrglasses
 
 ### dlf-kompakkt
 

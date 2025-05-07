@@ -1,5 +1,5 @@
 viewer:
- name: 3DView for VR Glasses
+ name: 3DView for VR Glasses (Jena)
  supportedModelFormats:
   - glb
   - gltf

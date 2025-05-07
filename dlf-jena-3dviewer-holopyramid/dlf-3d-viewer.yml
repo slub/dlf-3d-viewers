@@ -1,5 +1,5 @@
 viewer:
- name: 3DView for Holopyramid
+ name: 3DView for Holopyramid (Jena)
  supportedModelFormats:
   - glb
   - gltf

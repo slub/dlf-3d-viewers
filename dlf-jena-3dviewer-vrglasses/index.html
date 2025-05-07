@@ -87,7 +87,6 @@
         const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
 
         const scene = new THREE.Scene();
-
         {
             //Light
             const ambientlight = new THREE.AmbientLight(0x555555);
@@ -127,51 +126,35 @@
             var CenterY = (bbox.max.y - DimensionY / 2);
             var CenterZ = (bbox.max.z - DimensionZ / 2);
             DimensionMultiplier = ((DimensionX > DimensionY && DimensionX > DimensionZ ? DimensionX : (DimensionY > DimensionZ ? DimensionY : DimensionZ)));
-
-            //
-            console.log(DimensionMultiplier);
             camera.position.set(0, 1.6, 0);
-
-
             //Center Position
             gltf.scene.position.set(0, 0, 0);
             scene.add(gltf.scene);
         });
 
         function resizeRendererToDisplaySize(renderer) {
-
             const canvas = renderer.domElement;
             const width = canvas.clientWidth;
             const height = canvas.clientHeight;
             const needResize = canvas.width !== width || canvas.height !== height;
             if (needResize) {
-
                 renderer.setSize(width, height, false);
-
             }
-
             return needResize;
-
         }
 
         function render(time) {
-
             time *= 0.001;
-
             if (resizeRendererToDisplaySize(renderer)) {
 
                 const canvas = renderer.domElement;
                 camera.aspect = canvas.clientWidth / canvas.clientHeight;
                 camera.updateProjectionMatrix();
             }
-
             renderer.render(scene, camera);
-
         }
 
         renderer.setAnimationLoop(render);
-
-
     }
     main();
 </script>

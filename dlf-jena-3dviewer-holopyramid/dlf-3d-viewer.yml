@@ -1,0 +1,5 @@
+viewer:
+ name: 3DView for Holopyramid
+ supportedModelFormats:
+  - glb
+  - gltf

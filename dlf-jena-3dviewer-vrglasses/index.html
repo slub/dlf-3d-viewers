@@ -110,15 +110,13 @@
             context.fillStyle = gradient;
             context.fillRect(0, 0, canvas.width, canvas.height);
         }
-        //Query URL
-        const queryString = window.location.search;
-        const url = decodeURIComponent(queryString.slice(1));
-        console.log('String: ' + url);
 
         //Load Object
         let DimensionMultiplier = 1;
         const loader = new GLTFLoader();
-        loader.load(url, function (gltf) {
+        const urlParams = new URLSearchParams( window.location.search);
+        
+        loader.load(urlParams.get('model'), function (gltf) {
             var bbox = new THREE.Box3().setFromObject(gltf.scene);
 
             //Calculate largest value of bounding box and set it as Camera Distance

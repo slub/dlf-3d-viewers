@@ -57,11 +57,11 @@ https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu
 
 ### dlf-jena-3dviewer-holopyramid
 
-Integration of [ATON](https://osiris.itabc.cnr.it/aton/) framework.
+Integration of 3DView for Holopyramid from https://3drepo.eu/.
 
 Supported model formats: .glb, .gltf
 
-![image](https://github.com/user-attachments/assets/3e46f16d-e201-4656-930e-93aa547f3342)
+![image](https://github.com/user-attachments/assets/90aaa744-cf2a-4fcf-bd4e-eab9b01477cf)
 
 #### Test
 
@@ -69,11 +69,11 @@ https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu
 
 ### dlf-jena-3dviewer-vrglasses
 
-Integration of [ATON](https://osiris.itabc.cnr.it/aton/) framework.
+Integration of 3DView for VR Glasses from https://3drepo.eu/.
 
 Supported model formats: .glb, .gltf
 
-![image](https://github.com/user-attachments/assets/3e46f16d-e201-4656-930e-93aa547f3342)
+![image](https://github.com/user-attachments/assets/5994b03a-802c-4bfc-ad25-c07c7e28603e)
 
 #### Test
 

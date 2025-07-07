@@ -29,6 +29,26 @@ For more informations regarding embedding this folder into Kitodo.Presentation a
 
 These are integrations of 3D viewers or custom 3D viewer implementations base on a JavaScript 3D library (e.g. three.js) which have been prepared for Kitodo.Presentation and thus for the DFG-Viewer.
 
+**Overview of supported model formats** 
+
+| | dlf-3dhop | dlf-aim-3d | dlf-aton | dlf-jena-3dviewer-holopyramid | dlf-jena-3dviewer-vrglasses | dlf-kompakkt | dlf-model-viewer | dlf-threejs |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| FBX |  | :white_check_mark: |  |  |  |  |  |  |
+| OBJ | :white_check_mark: | :white_check_mark: |  |  |  | :white_check_mark: |  |  |
+| DAE |  | :white_check_mark: |  |  |  |  |  |  |
+| PLY | :white_check_mark: | :white_check_mark: |  |  |  |  |  | :white_check_mark: |
+| 3DS |  | :white_check_mark: |  |  |  |  |  |  |
+| IFC |  | :white_check_mark: |  |  |  |  |  |  |
+| STL |  | :white_check_mark: |  |  |  | :white_check_mark: |  |  |
+| GLB |  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |  |
+| glTF |  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |  |
+| X3D |  |  |  |  |  |  |  |  |
+| JSON |  | :white_check_mark: |  |  |  |  |  |  |
+| XYZ |  | :white_check_mark: |  |  |  |  |  |  |
+| 3DM |  |  |  |  |  |  |  |  |
+| XML |  |  |  |  |  |  |  |  |
+| E54 |  |  |  |  |  |  |  |  |
+
 *DLF prefix stands for “Digital Library Framework” and is the key of the TYPO3 extension “Kitodo.Presentation”. The name of the viewer integration can be chosen freely for your [custom viewer](https://kitodo.github.io/kitodo-presentation/Developers/Embedded3DViewer.html#Custom%20Viewer).*
 
 ### dlf-3dhop
@@ -46,6 +66,22 @@ https://3dtest.dfg-viewer.de/viewer?tx_dlf[model]=https://3dtest.dfg-viewer.de/f
 ##### GitHub Runner Testsystem
 
 https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[model]=https://bear-genuine-hookworm.ngrok-free.app/fileadmin/models/gargo.ply&tx_dlf[viewer]=dlf-3dhop
+
+### dlf-aim-3d
+
+Integration of 3D Viewer implementation [thedworak/dfg_3dviewer](https://github.com/thedworak/dfg_3dviewer) of Daniel Dworak Hochschule Mainz.
+
+Supported model formats: .obj, .dae, .fbx, .ply, .ifc, .stl, .xyz, .json, .3ds, .gltf, .glb
+
+![image](https://github.com/user-attachments/assets/25092f15-a9c7-4564-96f8-342b341f2793)
+
+#### Test
+
+https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-ai-mainz-3dviewer
+
+##### GitHub Runner Testsystem
+
+https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-ai-mainz-3dviewer
 
 ### dlf-aton
 
@@ -136,22 +172,6 @@ https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu
 
 Use the model viewer from the Integration repository
 https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-model-viewer
-
-### dlf-aim-3d
-
-Integration of 3D Viewer implementation [thedworak/dfg_3dviewer](https://github.com/thedworak/dfg_3dviewer) of Daniel Dworak Hochschule Mainz.
-
-Supported model formats: .obj, .dae, .fbx, .ply, .ifc, .stl, .xyz, .json, .3ds, .gltf, .glb
-
-![image](https://github.com/user-attachments/assets/25092f15-a9c7-4564-96f8-342b341f2793)
-
-#### Test
-
-https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-ai-mainz-3dviewer
-
-##### GitHub Runner Testsystem
-
-https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-ai-mainz-3dviewer
 
 ### dlf-threejs
 

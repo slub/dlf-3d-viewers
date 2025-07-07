@@ -29,7 +29,9 @@ For more informations regarding embedding this folder into Kitodo.Presentation a
 
 These are integrations of 3D viewers or custom 3D viewer implementations base on a JavaScript 3D library (e.g. three.js) which have been prepared for Kitodo.Presentation and thus for the DFG-Viewer.
 
-**Overview of supported model formats** 
+*DLF prefix stands for “Digital Library Framework” and is the key of the TYPO3 extension “Kitodo.Presentation”. The name of the viewer integration can be chosen freely for your [custom viewer](https://kitodo.github.io/kitodo-presentation/Developers/Embedded3DViewer.html#Custom%20Viewer).*
+
+**Overview of the integrated viewers and their supported model formats** 
 
 | | dlf-3dhop | dlf-aim-3d | dlf-aton | dlf-jena-3dviewer-holopyramid | dlf-jena-3dviewer-vrglasses | dlf-kompakkt | dlf-model-viewer | dlf-threejs |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -49,7 +51,7 @@ These are integrations of 3D viewers or custom 3D viewer implementations base on
 | XML |  |  |  |  |  |  |  |  |
 | E54 |  |  |  |  |  |  |  |  |
 
-*DLF prefix stands for “Digital Library Framework” and is the key of the TYPO3 extension “Kitodo.Presentation”. The name of the viewer integration can be chosen freely for your [custom viewer](https://kitodo.github.io/kitodo-presentation/Developers/Embedded3DViewer.html#Custom%20Viewer).*
+
 
 ### dlf-3dhop
 

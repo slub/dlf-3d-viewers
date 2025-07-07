@@ -41,6 +41,10 @@ Supported model formats: .ply, .obj
 
 #### Test
 
+https://3dtest.dfg-viewer.de/viewer?tx_dlf[model]=https://3dtest.dfg-viewer.de/fileadmin/models/gargo.ply&tx_dlf[viewer]=dlf-3dhop
+
+##### GitHub Runner Testsystem
+
 https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[model]=https://bear-genuine-hookworm.ngrok-free.app/fileadmin/models/gargo.ply&tx_dlf[viewer]=dlf-3dhop
 
 ### dlf-aton
@@ -53,29 +57,41 @@ Supported model formats: .glb, .gltf
 
 #### Test
 
+https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-aton
+
+##### GitHub Runner Testsystem
+
 https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-aton
 
 ### dlf-jena-3dviewer-holopyramid
 
-Integration of [ATON](https://osiris.itabc.cnr.it/aton/) framework.
+Integration of 3DView for Holopyramid from https://3drepo.eu/.
 
 Supported model formats: .glb, .gltf
 
-![image](https://github.com/user-attachments/assets/3e46f16d-e201-4656-930e-93aa547f3342)
+![image](https://github.com/user-attachments/assets/90aaa744-cf2a-4fcf-bd4e-eab9b01477cf)
 
 #### Test
+
+https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-jena-3dviewer-holopyramid
+
+##### GitHub Runner Testsystem
 
 https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-jena-3dviewer-holopyramid
 
 ### dlf-jena-3dviewer-vrglasses
 
-Integration of [ATON](https://osiris.itabc.cnr.it/aton/) framework.
+Integration of 3DView for VR Glasses from https://3drepo.eu/.
 
 Supported model formats: .glb, .gltf
 
-![image](https://github.com/user-attachments/assets/3e46f16d-e201-4656-930e-93aa547f3342)
+![image](https://github.com/user-attachments/assets/5994b03a-802c-4bfc-ad25-c07c7e28603e)
 
 #### Test
+
+https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-jena-3dviewer-vrglasses
+
+##### GitHub Runner Testsystem
 
 https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-jena-3dviewer-vrglasses
 
@@ -88,6 +104,10 @@ Supported model formats: .glb, .babylon, .gltf, .obj, .stl
 ![image](https://github.com/user-attachments/assets/1fc458e8-fa48-4d69-b8dc-a1d3cbe46138)
 
 #### Test
+
+https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-kompakkt
+
+##### GitHub Runner Testsystem
 
 https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-kompakkt
 
@@ -102,6 +122,14 @@ Supported model formats: .glb, .gltf
 ![image](https://github.com/user-attachments/assets/14345cce-a32d-4c6e-89f8-d63909e3f35e)
 
 #### Test
+
+Default of viewer Kitodo.Presentation and with that DFG-Viewer
+https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml
+
+Use the model viewer from the Integration repository
+https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-model-viewer
+
+##### GitHub Runner Testsystem
 
 Default of viewer Kitodo.Presentation and with that DFG-Viewer
 https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml
@@ -119,7 +147,11 @@ Supported model formats: .obj, .dae, .fbx, .ply, .ifc, .stl, .xyz, .json, .3ds, 
 
 #### Test
 
-https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-aim-3d
+https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-ai-mainz-3dviewer
+
+##### GitHub Runner Testsystem
+
+https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-ai-mainz-3dviewer
 
 ### dlf-threejs
 
@@ -130,6 +162,10 @@ Supported model formats: .ply
 ![image](https://github.com/user-attachments/assets/ed8a6993-1c31-45dd-8b02-88652979ce53)
 
 #### Test
+
+https://3dtest.dfg-viewer.de/viewer?tx_dlf[model]=https://3dtest.dfg-viewer.de/fileadmin/models/gargo.ply&tx_dlf[viewer]=dlf-threejs
+
+##### GitHub Runner Testsystem
 
 https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[model]=https://bear-genuine-hookworm.ngrok-free.app/fileadmin/models/gargo.ply&tx_dlf[viewer]=dlf-threejs
 

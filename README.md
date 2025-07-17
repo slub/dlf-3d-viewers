@@ -80,11 +80,11 @@ Supported model formats: .obj, .dae, .fbx, .ply, .ifc, .stl, .xyz, .json, .3ds, 
 
 #### Test
 
-https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-ai-mainz-3dviewer
+https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-aim-3d
 
 ##### GitHub Runner Testsystem
 
-https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-ai-mainz-3dviewer
+https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-aim-3d
 
 ### dlf-aton
 

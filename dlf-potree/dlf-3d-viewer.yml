@@ -1,0 +1,5 @@
+viewer:
+ name: Potree
+ supportedModelFormats:
+  - glb
+  - gltf

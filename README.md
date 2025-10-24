@@ -35,23 +35,23 @@ These are integrations of 3D viewers or custom 3D viewer implementations base on
 
 **Overview of the integrated viewers and their supported model formats** 
 
-| | dlf-3dhop | dlf-aim-3d | dlf-aton | dlf-jena-3dviewer-holopyramid | dlf-jena-3dviewer-vrglasses | dlf-kompakkt | dlf-model-viewer | dlf-threejs |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| FBX |  | :white_check_mark: |  |  |  |  |  |  |
-| OBJ | :white_check_mark: | :white_check_mark: |  |  |  | :white_check_mark: |  |  |
-| DAE |  | :white_check_mark: |  |  |  |  |  |  |
-| PLY | :white_check_mark: | :white_check_mark: |  |  |  |  |  | :white_check_mark: |
-| 3DS |  | :white_check_mark: |  |  |  |  |  |  |
-| IFC |  | :white_check_mark: |  |  |  |  |  |  |
-| STL |  | :white_check_mark: |  |  |  | :white_check_mark: |  |  |
-| GLB |  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |  |
-| glTF |  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |  |
-| X3D |  |  |  |  |  |  |  |  |
-| JSON |  | :white_check_mark: |  |  |  |  |  |  |
-| XYZ |  | :white_check_mark: |  |  |  |  |  |  |
-| 3DM |  |  |  |  |  |  |  |  |
-| XML |  |  |  |  |  |  |  |  |
-| E54 |  |  |  |  |  |  |  |  |
+| | dlf-3dhop | dlf-aim-3d | dlf-aton | dlf-jena-3dviewer-holopyramid | dlf-jena-3dviewer-ply-pointcloud | dlf-jena-3dviewer-vrglasses | dlf-kompakkt | dlf-model-viewer | dlf-threejs |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| FBX |  | :white_check_mark: |  |  |  |  |  |  |  |
+| OBJ | :white_check_mark: | :white_check_mark: |  |  |  |  | :white_check_mark: |  |  |
+| DAE |  | :white_check_mark: |  |  |  |  |  |  |  |
+| PLY | :white_check_mark: | :white_check_mark: |  |  | :white_check_mark: |  |  |  | :white_check_mark: |
+| 3DS |  | :white_check_mark: |  |  |  |  |  |  |  |
+| IFC |  | :white_check_mark: |  |  |  |  |  |  |  |
+| STL |  | :white_check_mark: |  |  |  |  | :white_check_mark: |  |  |
+| GLB |  | :white_check_mark: | :white_check_mark: | :white_check_mark: |  | :white_check_mark: | :white_check_mark: | :white_check_mark: |  |
+| glTF |  | :white_check_mark: | :white_check_mark: | :white_check_mark: |  | :white_check_mark: | :white_check_mark: | :white_check_mark: |  |
+| X3D |  |  |  |  |  |  |  |  |  |
+| JSON |  | :white_check_mark: |  |  |  |  |  |  |  |
+| XYZ |  | :white_check_mark: |  |  |  |  |  |  |  |
+| 3DM |  |  |  |  |  |  |  |  |  |
+| XML |  |  |  |  |  |  |  |  |  | 
+| E54 |  |  |  |  |  |  |  |  |  |
 
 
 

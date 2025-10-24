@@ -125,7 +125,7 @@ Integration of the PLY Point Cloud Viewer from https://3drepo.eu/.
 
 Supported model formats: .ply
 
-![image](https://github.com/user-attachments/assets/5994b03a-802c-4bfc-ad25-c07c7e28603e)
+![image](https://github.com/user-attachments/assets/c8666c91-f304-4155-86cd-de6fd1e9f09)
 
 #### Test
 

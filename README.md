@@ -3,6 +3,7 @@
  * [Installation](#installation)
  * [Integrations](#integrations)
    * [dlf-3dhop](#dlf-3dhop)
+   * [dlf-4dbrowser](#dlf-4dbrowser)
    * [dlf-aim-3d](#dlf-aim-3d)
    * [dlf-aton](#dlf-aton)
    * [dlf-jena-3dviewer-holopyramid](#dlf-jena-3dviewer-holopyramid)

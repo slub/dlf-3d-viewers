@@ -1,0 +1,4 @@
+viewer:
+ name: UH4D Browser
+ supportedModelFormats:
+  - json

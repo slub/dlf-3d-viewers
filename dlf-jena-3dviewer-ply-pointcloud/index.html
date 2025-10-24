@@ -164,13 +164,13 @@
 
     // Auto-load model from URL parameter on page load
     const urlParams = new URLSearchParams(window.location.search);
-    const modelUrl = urlParams.get('url');
+    const modelUrl = urlParams.get('model');
 
     if (modelUrl) {
         loadModel(modelUrl);
     } else {
         const indicator = document.getElementById('loading-indicator');
-        indicator.textContent = 'No model URL provided. Use "?url=URL_TO_PLY" in the address.';
+        indicator.textContent = 'No model URL provided. Use "?model=URL_TO_PLY" in the address.';
         indicator.style.display = 'block';
         indicator.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
         indicator.style.color = '#333';

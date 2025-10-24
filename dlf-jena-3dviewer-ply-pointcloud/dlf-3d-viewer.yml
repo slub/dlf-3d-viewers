@@ -1,0 +1,4 @@
+viewer:
+ name: PLY Point Cloud Viewer (Jena)
+ supportedModelFormats:
+  - ply

@@ -74,7 +74,7 @@ https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[model]=https://bear-g
 
 ### dlf-4dbrowser
 
-Integration of [UH4D Browser](https://4dbrowser.org)framework.
+Integration of [UH4D Browser](https://4dbrowser.org).
 
 Supported model formats: .json (IIIF manifest)
 

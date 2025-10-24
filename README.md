@@ -6,6 +6,7 @@
    * [dlf-aim-3d](#dlf-aim-3d)
    * [dlf-aton](#dlf-aton)
    * [dlf-jena-3dviewer-holopyramid](#dlf-jena-3dviewer-holopyramid)
+   * [dlf-jena-3dviewer-ply-pointcloud](#dlf-jena-3dviewer-ply-pointcloud)
    * [dlf-jena-3dviewer-vrglasses](#dlf-jena-3dviewer-vrglasses)
    * [dlf-kompakkt](#dlf-kompakkt)
    * [dlf-model-viewer](#dlf-model-viewer)
@@ -104,7 +105,7 @@ https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu
 
 ### dlf-jena-3dviewer-holopyramid
 
-Integration of 3DView for Holopyramid from https://3drepo.eu/.
+Integration of the 3DView for Holopyramid from https://3drepo.eu/.
 
 Supported model formats: .glb, .gltf
 
@@ -118,9 +119,25 @@ https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5d
 
 https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-jena-3dviewer-holopyramid
 
+### dlf-jena-3dviewer-ply-pointcloud
+
+Integration of the PLY Point Cloud Viewer from https://3drepo.eu/.
+
+Supported model formats: .ply
+
+![image](https://github.com/user-attachments/assets/5994b03a-802c-4bfc-ad25-c07c7e28603e)
+
+#### Test
+
+https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-jena-3dviewer-ply-pointcloud
+
+##### GitHub Runner Testsystem
+
+https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-jena-3dviewer-ply-pointcloud
+
 ### dlf-jena-3dviewer-vrglasses
 
-Integration of 3DView for VR Glasses from https://3drepo.eu/.
+Integration of the 3DView for VR Glasses from https://3drepo.eu/.
 
 Supported model formats: .glb, .gltf
 

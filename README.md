@@ -71,6 +71,22 @@ https://3dtest.dfg-viewer.de/viewer?tx_dlf[model]=https://3dtest.dfg-viewer.de/f
 
 https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[model]=https://bear-genuine-hookworm.ngrok-free.app/fileadmin/models/gargo.ply&tx_dlf[viewer]=dlf-3dhop
 
+### dlf-4dbrowser
+
+Integration of [UH4D Browser](https://4dbrowser.org)framework.
+
+Supported model formats: .json (IIIF manifest)
+
+![image](https://github.com/user-attachments/assets/153f06ab-855b-4989-b06a-73cef84cc0f0)
+
+#### Test
+
+https://3dtest.dfg-viewer.de/viewer?tx_dlf%5Bmodel%5D=https%3A%2F%2Fzenodo.org%2Frecords%2F17391252%2Ffiles%2F86fc8419401c9a8ciiifmanifest.json&tx_dlf%5Bviewer%5D=dlf-4dbrowser
+
+##### GitHub Runner Testsystem
+
+https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf%5Bmodel%5D=https%3A%2F%2Fzenodo.org%2Frecords%2F17391252%2Ffiles%2F86fc8419401c9a8ciiifmanifest.json&tx_dlf%5Bviewer%5D=dlf-4dbrowser
+
 ### dlf-aim-3d
 
 Integration of 3D Viewer implementation [thedworak/dfg_3dviewer](https://github.com/thedworak/dfg_3dviewer) of Daniel Dworak Hochschule Mainz.

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PCSS Viewer</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            height: 100svh;
+            width: 100svw;
+            overflow: hidden;
+        }
+        iframe {
+            height: 100%;
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<iframe id="viewer" src="https://3dviewer.apps.bst2.paas.psnc.pl/"></iframe>
+<script>
+    const iframe = document.getElementById("viewer");
+
+    iframe.onload = () => {
+        iframe.contentWindow.postMessage(
+            {
+                type: "LOAD_MODEL",
+                payload: {
+                    url: "http://localhost:3000/models/2.obj",
+                    mtl: "http://localhost:3000/models/2.mtl",
+                },
+            },
+            "https://3dviewer.apps.bst2.paas.psnc.pl/"
+        );
+    };
+
+    window.addEventListener("message", (event) => {
+        // if (event.origin !== "https://3dviewer.apps.bst2.paas.psnc.pl/") return;
+
+        console.log("[Parent] Received message from iframe:", event.data);
+
+        if (event.data.type === "VIEWER_READY") {
+            console.log("[Parent] Viewer is ready!");
+        }
+    });
+</script>
+</body>
+</html>

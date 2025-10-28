@@ -1,0 +1,6 @@
+viewer:
+  name: PCSS Viewer
+  supportedModelFormats:
+    - glb
+    - gltf
+    - obj

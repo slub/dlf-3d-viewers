@@ -29,8 +29,8 @@
             {
                 type: "LOAD_MODEL",
                 payload: {
-                    url: "{{modelUrl}}",
-                    mtl: "http://localhost:3000/models/2.mtl",
+                    // url: "url_to_model",
+                    // mtl: "url_to_mtl",
                 },
             },
             "https://3dviewer.apps.bst2.paas.psnc.pl/"
@@ -38,8 +38,6 @@
     };
 
     window.addEventListener("message", (event) => {
-        // if (event.origin !== "https://3dviewer.apps.bst2.paas.psnc.pl/") return;
-
         console.log("[Parent] Received message from iframe:", event.data);
 
         if (event.data.type === "VIEWER_READY") {

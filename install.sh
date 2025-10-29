@@ -34,7 +34,7 @@ install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_TH
 install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_THREEJS_VERSION.zip" "dlf-threejs"
 install_zip_module "https://github.com/phoenixbf/aton/archive/refs/tags/$DLF_ATON_VERSION.zip" "dlf-aton"
 #install_zip_module "https://github.com/thedworak/dfg_3dviewer/archive/refs/heads/$DLF_THEDWORAK_DFG_3DVIEWER_VERSION.zip" "dlf-aim-3d"
-#install legacy state
-install_zip_module "https://github.com/thedworak/dfg_3dviewer/archive/67814a8d251a5d73f1a6736930bd415eec5b4b0b.zip" "dlf-aim-3d"
+#install legacy state 67814a8d251a5d73f1a6736930bd415eec5b4b0b
+install_zip_module "https://github.com/thedworak/dfg_3dviewer/archive/08eef521b2178818606be75aa58e3dd6ded70c52.zip" "dlf-aim-3d"
 install_lib_module "https://ajax.googleapis.com/ajax/libs/model-viewer/$DLF_MODEL_VIEWER_VERSION/model-viewer.min.js" "dlf-model-viewer" "model-viewer/$DLF_MODEL_VIEWER_VERSION"
 install_lib_module "https://raw.githubusercontent.com/Kompakkt/StandaloneViewer/$DLF_KOMPAKKT_STANDALONE_VERSION/kompakkt-standalone.min.js" "dlf-kompakkt" "kompakkt-standalone/$DLF_KOMPAKKT_STANDALONE_VERSION"

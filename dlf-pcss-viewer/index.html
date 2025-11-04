@@ -20,34 +20,6 @@
 		</style>
 	</head>
 	<body>
-		<iframe id="viewer" src="https://3dviewer.apps.bst2.paas.psnc.pl/"></iframe>
-		<script>
-			const iframe = document.getElementById("viewer");
-			window.addEventListener("message", (e) => {
-				console.log("Message received from a viewer: ", e.data.type);
-				if (event.data.type === "VIEWER_HELLO") {
-					console.log("Successful handshake, sending LOAD_MODEL");
-
-					iframe.contentWindow.postMessage(
-						{
-							type: "LOAD_MODEL",
-							payload: {
-								modelUrl: "{{modelUrl}}",
-							},
-						},
-						"*"
-					);
-				}
-			});
-			iframe.addEventListener("load", () => {
-				console.log("Iframe loaded, sending CLIENT_HELLO");
-				iframe.contentWindow.postMessage(
-					{
-						type: "CLIENT_HELLO",
-					},
-					"*"
-				);
-			});
-		</script>
+		<iframe id="viewer" src="https://3dviewer.apps.bst2.paas.psnc.pl?modelUrl={{modelUrl}}"></iframe>
 	</body>
 </html>

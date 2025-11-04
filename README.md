@@ -213,7 +213,7 @@ https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu
 
 Supported model formats: .glb, .gltf, .obj
 
-![image](https://github.com/user-attachments/assets/14345cce-a32d-4c6e-89f8-d63909e3f35e)
+<img width="2533" height="1213" alt="image" src="https://github.com/user-attachments/assets/22459815-f329-499b-8e36-f856185def6a" />
 
 #### Test
 

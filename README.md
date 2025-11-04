@@ -211,8 +211,6 @@ https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu
 
 ### dlf-pcss-viewer
 
-Integration of the [model-viewer](https://modelviewer.dev/). 
-
 Supported model formats: .glb, .gltf, .obj
 
 ![image](https://github.com/user-attachments/assets/14345cce-a32d-4c6e-89f8-d63909e3f35e)

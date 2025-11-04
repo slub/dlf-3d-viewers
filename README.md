@@ -11,6 +11,7 @@
    * [dlf-jena-3dviewer-vrglasses](#dlf-jena-3dviewer-vrglasses)
    * [dlf-kompakkt](#dlf-kompakkt)
    * [dlf-model-viewer](#dlf-model-viewer)
+   * [dlf-pcss-viewer](#dlf-pcss-viewer)
    * [dlf-threejs](#dlf-threejs)
  * [DFG 3D-Viewer test system](#dfg-3d-viewer-test-system)
  * [Further information](#further-information)
@@ -36,25 +37,23 @@ These are integrations of 3D viewers or custom 3D viewer implementations base on
 
 **Overview of the integrated viewers and their supported model formats** 
 
-| | dlf-3dhop | dlf-4dbrowser | dlf-aim-3d | dlf-aton | dlf-jena-3dviewer-holopyramid | dlf-jena-3dviewer-ply-pointcloud | dlf-jena-3dviewer-vrglasses | dlf-kompakkt | dlf-model-viewer | dlf-threejs |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| FBX |  |  | :white_check_mark: |  |  |  |  |  |  |  |
-| OBJ | :white_check_mark: |  | :white_check_mark: |  |  |  |  | :white_check_mark: |  |  |
-| DAE |  |  | :white_check_mark: |  |  |  |  |  |  |  |
-| PLY | :white_check_mark: |  | :white_check_mark: |  |  | :white_check_mark: |  |  |  | :white_check_mark: |
-| 3DS |  |  | :white_check_mark: |  |  |  |  |  |  |  |
-| IFC |  |  | :white_check_mark: |  |  |  |  |  |  |  |
-| STL |  |  | :white_check_mark: |  |  |  |  | :white_check_mark: |  |  |
-| GLB |  |  | :white_check_mark: | :white_check_mark: | :white_check_mark: |  | :white_check_mark: | :white_check_mark: | :white_check_mark: |  |
-| glTF |  |  | :white_check_mark: | :white_check_mark: | :white_check_mark: |  | :white_check_mark: | :white_check_mark: | :white_check_mark: |  |
-| X3D |  |  |  |  |  |  |  |  |  |  |
-| JSON |  | :white_check_mark: | :white_check_mark: |  |  |  |  |  |  |  |
-| XYZ |  |  | :white_check_mark: |  |  |  |  |  |  |  |
-| 3DM |  |  |  |  |  |  |  |  |  |  |
-| XML |  |  |  |  |  |  |  |  |  |  | 
-| E54 |  |  |  |  |  |  |  |  |  |  |
-
-
+| | dlf-3dhop | dlf-4dbrowser | dlf-aim-3d | dlf-aton | dlf-jena-3dviewer-holopyramid | dlf-jena-3dviewer-ply-pointcloud | dlf-jena-3dviewer-vrglasses | dlf-kompakkt | dlf-model-viewer | dlf-pcss-viewer | dlf-threejs |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| FBX |  |  | :white_check_mark: |  |  |  |  |  |  |  |  |
+| OBJ | :white_check_mark: |  | :white_check_mark: |  |  |  |  | :white_check_mark: |  | :white_check_mark: |  |
+| DAE |  |  | :white_check_mark: |  |  |  |  |  |  |  |  |
+| PLY | :white_check_mark: |  | :white_check_mark: |  |  | :white_check_mark: |  |  |  |  | :white_check_mark: |
+| 3DS |  |  | :white_check_mark: |  |  |  |  |  |  |  |  |
+| IFC |  |  | :white_check_mark: |  |  |  |  |  |  |  |  |
+| STL |  |  | :white_check_mark: |  |  |  |  | :white_check_mark: |  |  |  |
+| GLB |  |  | :white_check_mark: | :white_check_mark: | :white_check_mark: |  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |  |
+| glTF |  |  | :white_check_mark: | :white_check_mark: | :white_check_mark: |  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |  |
+| X3D |  |  |  |  |  |  |  |  |  |  |  |
+| JSON |  | :white_check_mark: | :white_check_mark: |  |  |  |  |  |  |  |  |
+| XYZ |  |  | :white_check_mark: |  |  |  |  |  |  |  |  |
+| 3DM |  |  |  |  |  |  |  |  |  |  |  |
+| XML |  |  |  |  |  |  |  |  |  |  |  |
+| E54 |  |  |  |  |  |  |  |  |  |  |  |
 
 ### dlf-3dhop
 
@@ -209,6 +208,22 @@ https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu
 
 Use the model viewer from the Integration repository
 https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-model-viewer
+
+### dlf-pcss-viewer
+
+Integration of the [model-viewer](https://modelviewer.dev/). 
+
+Supported model formats: .glb, .gltf, .obj
+
+![image](https://github.com/user-attachments/assets/14345cce-a32d-4c6e-89f8-d63909e3f35e)
+
+#### Test
+
+https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-pcss-viewer
+
+##### GitHub Runner Testsystem
+
+https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://3drepo.eu/modelupload/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-pcss-viewer
 
 ### dlf-threejs
 

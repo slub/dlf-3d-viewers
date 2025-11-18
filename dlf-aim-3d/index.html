@@ -2,22 +2,27 @@
 <html>
 <head>
     <base target="_blank">
-    <title>Three.js 3D-DFG-Viewer</title>
-    <link rel="stylesheet" href="{{viewerPath}}modules/dfg_3dviewer-ec3f8401dabebd7b05ae803c8baa89af53e87fd5/viewer/css/spinner.css">
-    <link rel="stylesheet" href="{{viewerPath}}modules/dfg_3dviewer-ec3f8401dabebd7b05ae803c8baa89af53e87fd5/viewer/css/main.css">
+    <title>AIM 3D Viewer</title>
+    <link href="{{viewerPath}}modules/assets/css/main.css" rel="stylesheet" />
+    <link href="{{viewerPath}}modules/assets/css/spinner.css" rel="stylesheet" />
+    <link href="{{viewerPath}}modules/assets/css/theme.css" rel="stylesheet" />
 </head>
 <body>
-<style>
-    html,body,#DFG_3DViewer {
-        height: 100%;
-        margin: 0;
-    }
-</style>
-<script type="module" src="{{viewerPath}}modules/dfg_3dviewer-ec3f8401dabebd7b05ae803c8baa89af53e87fd5/viewer/jquery-3.6.0.min.js"></script>
-<script src="{{viewerPath}}modules/dfg_3dviewer-ec3f8401dabebd7b05ae803c8baa89af53e87fd5/viewer/toastify.js"></script>
-<script src="{{viewerPath}}modules/dfg_3dviewer-ec3f8401dabebd7b05ae803c8baa89af53e87fd5/viewer/spinner/main.js"></script>
-<script type="module" src="{{viewerPath}}modules/dfg_3dviewer-ec3f8401dabebd7b05ae803c8baa89af53e87fd5/viewer/main.js"></script>
-<div id="DFG_3DViewer" 3d="{{modelUrl}}" basePath="{{viewerPath}}modules/dfg_3dviewer-ec3f8401dabebd7b05ae803c8baa89af53e87fd5/viewer"></div>
+<!--3d="https://3d-repository.hs-mainz.de/sites/default/files/2024-01/gltf/test2.glb"-->
+<div
+        id="DFG_3DViewer"
+        3d="{{modelUrl}}"
+        style="height: 50vh"
+>
+</div>
+<!--<div id="form">
+  </select>
+  <div class="form-group">
+    <input type="text" id="manifest-url" name="manifest-url" value=""></input>
+    <button id="load-manifest-from-url">Load Manifest From URL</button>
+  </div>
+  <textarea id="manifest-text" name="manifest-text" rows="10"></textarea>
+  <button id="load-manifest-from-text">Load Manifest From Text</button>
+</div>-->
+<script type="module" src="{{viewerPath}}modules/dfg_3dviewer-module.js"></script>
 </body>
-</html>
-

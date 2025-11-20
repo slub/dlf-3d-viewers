@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>3DBigDataSpace Viewer</title>
+		<style>
+			body,
+			html {
+				margin: 0;
+				height: 100svh;
+				width: 100svw;
+				overflow: hidden;
+			}
+			iframe {
+				height: 100%;
+				width: 100%;
+				border: none;
+			}
+		</style>
+	</head>
+	<body>
+		<iframe src="https://3dbigdataspace.labs.rooom.dev/embed?model={{modelUrl}}" allow="xr-spatial-tracking; accelerometer; gyroscope" allowfullscreen></iframe>
+	</body>
+</html>

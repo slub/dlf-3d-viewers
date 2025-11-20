@@ -1,0 +1,4 @@
+viewer:
+  name: 3DBigDataSpace Viewer
+  supportedModelFormats:
+    - glb

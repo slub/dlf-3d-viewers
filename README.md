@@ -62,7 +62,7 @@ Integration of the [3D Artifact Viewer](https://github.com/rooom-com/3DBigDataSp
 
 Supported model formats: .glb
 
-![image](https://github.com/user-attachments/assets/153f06ab-855b-4989-b06a-73cef84cc0f0)
+<img width="2533" height="1292" alt="image" src="https://github.com/user-attachments/assets/39cb0c2f-151b-4ad9-ad8e-91882001954d" />
 
 #### Test
 

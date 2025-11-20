@@ -38,23 +38,20 @@ These are integrations of 3D viewers or custom 3D viewer implementations base on
 
 **Overview of the integrated viewers and their supported model formats** 
 
-| | dlf-3dbigdataspace-viewer | dlf-3dhop | dlf-4dbrowser | dlf-aim-3d | dlf-aton | dlf-jena-3dviewer-holopyramid | dlf-jena-3dviewer-ply-pointcloud | dlf-jena-3dviewer-vrglasses | dlf-kompakkt | dlf-model-viewer | dlf-pcss-viewer | dlf-threejs |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| FBX |  |  |  | :white_check_mark: |  |  |  |  |  |  |  |  |
-| OBJ |  | :white_check_mark: |  | :white_check_mark: |  |  |  |  | :white_check_mark: |  | :white_check_mark: |  |
-| DAE |  |  |  | :white_check_mark: |  |  |  |  |  |  |  |  |
-| PLY |  | :white_check_mark: |  | :white_check_mark: |  |  | :white_check_mark: |  |  |  |  | :white_check_mark: |
-| 3DS |  |  |  | :white_check_mark: |  |  |  |  |  |  |  |  |
-| IFC |  |  |  | :white_check_mark: |  |  |  |  |  |  |  |  |
-| STL |  |  |  | :white_check_mark: |  |  |  |  | :white_check_mark: |  |  |  |
-| GLB | :white_check_mark: |  |  | :white_check_mark: | :white_check_mark: | :white_check_mark: |  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |  |
-| glTF |  |  |  | :white_check_mark: | :white_check_mark: | :white_check_mark: |  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |  |
-| X3D |  |  |  |  |  |  |  |  |  |  |  |  |
-| JSON |  |  | :white_check_mark: | :white_check_mark: |  |  |  |  |  |  |  |  |
-| XYZ |  |  |  | :white_check_mark: |  |  |  |  |  |  |  |  |
-| 3DM |  |  |  |  |  |  |  |  |  |  |  |  |
-| XML |  |  |  |  |  |  |  |  |  |  |  |  |
-| E54 |  |  |  |  |  |  |  |  |  |  |  |  |
+| Viewer | FBX | OBJ | DAE | PLY | 3DS | IFC | STL | GLB | glTF | X3D | JSON | XYZ | 3DM | XML | E54 |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| dlf-3dbigdataspace-viewer |  |  |  |  |  |  |  | :white_check_mark: |  |  |  |  |  |  |  |
+| dlf-3dhop |  | :white_check_mark: |  | :white_check_mark: |  |  |  |  |  |  |  |  |  |  |  |
+| dlf-4dbrowser |  |  |  |  |  |  |  |  |  |  | :white_check_mark: |  |  |  |  |
+| dlf-aim-3d | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |  | :white_check_mark: | :white_check_mark: |  |  |  |
+| dlf-aton |  |  |  |  |  |  |  | :white_check_mark: | :white_check_mark: |  |  |  |  |  |  |
+| dlf-jena-3dviewer-holopyramid |  |  |  |  |  |  |  | :white_check_mark: | :white_check_mark: |  |  |  |  |  |  |
+| dlf-jena-3dviewer-ply-pointcloud |  |  |  | :white_check_mark: |  |  |  |  |  |  |  |  |  |  |  |
+| dlf-jena-3dviewer-vrglasses |  |  |  |  |  |  |  | :white_check_mark: | :white_check_mark: |  |  |  |  |  |  |
+| dlf-kompakkt |  | :white_check_mark: |  |  |  |  | :white_check_mark: | :white_check_mark: | :white_check_mark: |  |  |  |  |  |  |
+| dlf-model-viewer |  |  |  |  |  |  |  | :white_check_mark: | :white_check_mark: |  |  |  |  |  |  |
+| dlf-pcss-viewer |  | :white_check_mark: |  |  |  |  |  | :white_check_mark: | :white_check_mark: |  |  |  |  |  |  |
+| dlf-threejs |  |  |  | :white_check_mark: |  |  |  |  |  |  |  |  |  |  |  |
 
 ### dlf-3dbigdataspace-viewer
 

@@ -28,6 +28,7 @@ install_lib_module() {
 }
 
 #install_zip_module "https://www.3dhop.net/download/3DHOP_$DLF_3DHOP_VERSION.zip" "dlf-3dhop"
+install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_THREEJS_VERSION.zip" "dlf-jena-3dviewer-gaussiansplat"
 #install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_THREEJS_VERSION.zip" "dlf-jena-3dviewer-holopyramid"
 #install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_THREEJS_VERSION.zip" "dlf-jena-3dviewer-ply-pointcloud"
 #install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_THREEJS_VERSION.zip" "dlf-jena-3dviewer-vrglasses"
@@ -35,6 +36,6 @@ install_lib_module() {
 #install_zip_module "https://github.com/phoenixbf/aton/archive/refs/tags/$DLF_ATON_VERSION.zip" "dlf-aton"
 #install_zip_module "https://github.com/thedworak/dfg_3dviewer/archive/refs/heads/$DLF_THEDWORAK_DFG_3DVIEWER_VERSION.zip" "dlf-aim-3d"
 #install legacy state
-install_zip_module "https://github.com/thedworak/dfg_3dviewer/raw/3de45c9878392cb0ef108c19dd35b731086fc081/dfg_3dviewer-dist.zip" "dlf-aim-3d"
+#install_zip_module "https://github.com/thedworak/dfg_3dviewer/raw/3de45c9878392cb0ef108c19dd35b731086fc081/dfg_3dviewer-dist.zip" "dlf-aim-3d"
 #install_lib_module "https://ajax.googleapis.com/ajax/libs/model-viewer/$DLF_MODEL_VIEWER_VERSION/model-viewer.min.js" "dlf-model-viewer" "model-viewer/$DLF_MODEL_VIEWER_VERSION"
 #install_lib_module "https://raw.githubusercontent.com/Kompakkt/StandaloneViewer/$DLF_KOMPAKKT_STANDALONE_VERSION/kompakkt-standalone.min.js" "dlf-kompakkt" "kompakkt-standalone/$DLF_KOMPAKKT_STANDALONE_VERSION"

@@ -1,0 +1,4 @@
+viewer:
+ name: Gaussian Splat Viewer (Jena)
+ supportedModelFormats:
+  - html

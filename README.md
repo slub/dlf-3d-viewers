@@ -137,7 +137,7 @@ https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://data.3dre
 
 ### dlf-jena-3dviewer-gaussiansplat
 
-Integration of the 3DView for Holopyramid from https://3drepo.eu/.
+Integration of the Gaussian Splat Viewer from https://3drepo.eu/.
 
 Supported model formats: .html
 

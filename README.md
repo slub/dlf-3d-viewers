@@ -145,11 +145,11 @@ Supported model formats: .html
 
 #### Test
 
-https://3dtest.dfg-viewer.de/viewer?tx_dlf[model]=https://lumalabs.ai/capture/059f25eb-e543-4404-9cd6-fc5c83c2442e&tx_dlf[viewer]=dlf-jena-3dviewer-gaussiansplat
+https://3dtest.dfg-viewer.de/viewer?tx_dlf[model]=https://lumalabs.ai/capture/059f25eb-e543-4404-9cd6-fc5c83c2442e&tx_dlf[modelFormat]=html&tx_dlf[viewer]=dlf-jena-3dviewer-gaussiansplat
 
 ##### GitHub Runner Testsystem
 
-https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[model]=https://lumalabs.ai/capture/059f25eb-e543-4404-9cd6-fc5c83c2442e&tx_dlf[viewer]=dlf-jena-3dviewer-gaussiansplat
+https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[model]=https://lumalabs.ai/capture/059f25eb-e543-4404-9cd6-fc5c83c2442e&tx_dlf[modelFormat]=html&tx_dlf[viewer]=dlf-jena-3dviewer-gaussiansplat
 
 ### dlf-jena-3dviewer-holopyramid
 

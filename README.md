@@ -7,6 +7,7 @@
    * [dlf-4dbrowser](#dlf-4dbrowser)
    * [dlf-aim-3d](#dlf-aim-3d)
    * [dlf-aton](#dlf-aton)
+   * [dlf-jena-3dviewer-gaussiansplat](#dlf-jena-3dviewer-gaussiansplat)
    * [dlf-jena-3dviewer-holopyramid](#dlf-jena-3dviewer-holopyramid)
    * [dlf-jena-3dviewer-ply-pointcloud](#dlf-jena-3dviewer-ply-pointcloud)
    * [dlf-jena-3dviewer-vrglasses](#dlf-jena-3dviewer-vrglasses)
@@ -38,20 +39,21 @@ These are integrations of 3D viewers or custom 3D viewer implementations base on
 
 **Overview of the integrated viewers and their supported model formats** 
 
-| Viewer | FBX | OBJ | DAE | PLY | 3DS | IFC | STL | GLB | glTF | JSON | XYZ |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| dlf-3dbigdataspace-viewer |  |  |  |  |  |  |  | :white_check_mark: |  |  |  |
-| dlf-3dhop |  | :white_check_mark: |  | :white_check_mark: |  |  |  |  |  |  |  |
-| dlf-4dbrowser |  |  |  |  |  |  |  |  |  | :white_check_mark: |  |
-| dlf-aim-3d | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| dlf-aton |  |  |  |  |  |  |  | :white_check_mark: | :white_check_mark: |  |  |
-| dlf-jena-3dviewer-holopyramid |  |  |  |  |  |  |  | :white_check_mark: | :white_check_mark: |  |  |
-| dlf-jena-3dviewer-ply-pointcloud |  |  |  | :white_check_mark: |  |  |  |  |  |  |  |
-| dlf-jena-3dviewer-vrglasses |  |  |  |  |  |  |  | :white_check_mark: | :white_check_mark: |  |  |
-| dlf-kompakkt |  | :white_check_mark: |  |  |  |  | :white_check_mark: | :white_check_mark: | :white_check_mark: |  |  |
-| dlf-model-viewer |  |  |  |  |  |  |  | :white_check_mark: | :white_check_mark: |  |  |
-| dlf-pcss-viewer |  | :white_check_mark: |  |  |  |  |  | :white_check_mark: | :white_check_mark: |  |  |
-| dlf-threejs |  |  |  | :white_check_mark: |  |  |  |  |  |  |  |
+| Viewer | FBX | OBJ | DAE | PLY | 3DS | IFC | STL | GLB | glTF | JSON | XYZ | HTML |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| dlf-3dbigdataspace-viewer |  |  |  |  |  |  |  | :white_check_mark: |  |  |  |  |
+| dlf-3dhop |  | :white_check_mark: |  | :white_check_mark: |  |  |  |  |  |  |  |  |
+| dlf-4dbrowser |  |  |  |  |  |  |  |  |  | :white_check_mark: |  |  |
+| dlf-aim-3d | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |  |
+| dlf-aton |  |  |  |  |  |  |  | :white_check_mark: | :white_check_mark: |  |  |  |
+| dlf-jena-3dviewer-gaussiansplat |  |  |  |  |  |  |  |  |  |  |  | :white_check_mark: |
+| dlf-jena-3dviewer-holopyramid |  |  |  |  |  |  |  | :white_check_mark: | :white_check_mark: |  |  |  |
+| dlf-jena-3dviewer-ply-pointcloud |  |  |  | :white_check_mark: |  |  |  |  |  |  |  |  |
+| dlf-jena-3dviewer-vrglasses |  |  |  |  |  |  |  | :white_check_mark: | :white_check_mark: |  |  |  |
+| dlf-kompakkt |  | :white_check_mark: |  |  |  |  | :white_check_mark: | :white_check_mark: | :white_check_mark: |  |  |  |
+| dlf-model-viewer |  |  |  |  |  |  |  | :white_check_mark: | :white_check_mark: |  |  |  |
+| dlf-pcss-viewer |  | :white_check_mark: |  |  |  |  |  | :white_check_mark: | :white_check_mark: |  |  |  |
+| dlf-threejs |  |  |  | :white_check_mark: |  |  |  |  |  |  |  |  |
 
 ### dlf-3dbigdataspace-viewer
 
@@ -132,6 +134,22 @@ https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmo
 ##### GitHub Runner Testsystem
 
 https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-aton
+
+### dlf-jena-3dviewer-gaussiansplat
+
+Integration of the 3DView for Holopyramid from https://3drepo.eu/.
+
+Supported model formats: .html
+
+![image](https://github.com/user-attachments/assets/90aaa744-cf2a-4fcf-bd4e-eab9b01477cf)
+
+#### Test
+
+https://3dtest.dfg-viewer.de/viewer?tx_dlf[model]=https://lumalabs.ai/capture/059f25eb-e543-4404-9cd6-fc5c83c2442e&tx_dlf[viewer]=dlf-jena-3dviewer-gaussiansplat
+
+##### GitHub Runner Testsystem
+
+https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[model]=https://lumalabs.ai/capture/059f25eb-e543-4404-9cd6-fc5c83c2442e&tx_dlf[viewer]=dlf-jena-3dviewer-gaussiansplat
 
 ### dlf-jena-3dviewer-holopyramid
 

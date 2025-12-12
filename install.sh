@@ -4,7 +4,7 @@ DLF_3DHOP_VERSION="4.3"
 DLF_ATON_VERSION="3.0.10"
 DLF_KOMPAKKT_STANDALONE_VERSION="main"
 DLF_MODEL_VIEWER_VERSION="4.0.0"
-#DLF_THEDWORAK_DFG_3DVIEWER_VERSION="npm-refactor"
+DLF_THEDWORAK_DFG_3DVIEWER_VERSION="npm-refactor-update"
 DLF_THREEJS_VERSION="r170"
 
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
@@ -28,14 +28,16 @@ install_lib_module() {
 }
 
 #install_zip_module "https://www.3dhop.net/download/3DHOP_$DLF_3DHOP_VERSION.zip" "dlf-3dhop"
-install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_THREEJS_VERSION.zip" "dlf-jena-3dviewer-gaussiansplat"
+#install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_THREEJS_VERSION.zip" "dlf-jena-3dviewer-gaussiansplat"
 #install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_THREEJS_VERSION.zip" "dlf-jena-3dviewer-holopyramid"
 #install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_THREEJS_VERSION.zip" "dlf-jena-3dviewer-ply-pointcloud"
 #install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_THREEJS_VERSION.zip" "dlf-jena-3dviewer-vrglasses"
 #install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_THREEJS_VERSION.zip" "dlf-threejs"
 #install_zip_module "https://github.com/phoenixbf/aton/archive/refs/tags/$DLF_ATON_VERSION.zip" "dlf-aton"
-#install_zip_module "https://github.com/thedworak/dfg_3dviewer/archive/refs/heads/$DLF_THEDWORAK_DFG_3DVIEWER_VERSION.zip" "dlf-aim-3d"
-#install legacy state
-#install_zip_module "https://github.com/thedworak/dfg_3dviewer/raw/3de45c9878392cb0ef108c19dd35b731086fc081/dfg_3dviewer-dist.zip" "dlf-aim-3d"
+
+install_zip_module "https://github.com/thedworak/dfg_3dviewer/archive/refs/heads/$DLF_THEDWORAK_DFG_3DVIEWER_VERSION.zip" "dlf-aim-3d"
+# unzip the provided branch distribution into the modules directory for use
+unzip -d "$SCRIPT_DIR/dlf-aim-3d/modules/dfg_3dviewer-$DLF_THEDWORAK_DFG_3DVIEWER_VERSION-dist" "$SCRIPT_DIR/dlf-aim-3d/modules/dfg_3dviewer-$DLF_THEDWORAK_DFG_3DVIEWER_VERSION/dfg_3dviewer-dist.zip"
+
 #install_lib_module "https://ajax.googleapis.com/ajax/libs/model-viewer/$DLF_MODEL_VIEWER_VERSION/model-viewer.min.js" "dlf-model-viewer" "model-viewer/$DLF_MODEL_VIEWER_VERSION"
 #install_lib_module "https://raw.githubusercontent.com/Kompakkt/StandaloneViewer/$DLF_KOMPAKKT_STANDALONE_VERSION/kompakkt-standalone.min.js" "dlf-kompakkt" "kompakkt-standalone/$DLF_KOMPAKKT_STANDALONE_VERSION"

@@ -141,7 +141,7 @@ Integration of the 3DView for Holopyramid from https://3drepo.eu/.
 
 Supported model formats: .html
 
-![image](https://github.com/user-attachments/assets/90aaa744-cf2a-4fcf-bd4e-eab9b01477cf)
+<img width="1896" height="975" alt="image" src="https://github.com/user-attachments/assets/96bd570e-209c-4420-8bf6-9ab370bdf87a" />
 
 #### Test
 

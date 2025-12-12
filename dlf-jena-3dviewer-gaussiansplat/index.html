@@ -108,9 +108,6 @@
             }
         }
 
-        loadingIndicator.style.display = 'block';
-        loadingIndicator.textContent = 'Loading...';
-
         currentSplat = new LumaSplatsThree(url);
         scene.add(currentSplat);
     }
@@ -118,14 +115,14 @@
     function getUrlToLoad() {
         const params = new URLSearchParams(window.location.search);
         // Prefer a standard `url` query parameter
-        const urlFromQuery = params.get('url');
+        const urlFromQuery = params.get('model');
         if (urlFromQuery) {
             return urlFromQuery;
         }
 
         // Support the old format where the URL is the entire query string
         const queryString = window.location.search;
-        if (queryString.length > 1 && !params.has('url')) {
+        if (queryString.length > 1 && !params.has('model')) {
             const legacyUrl = decodeURIComponent(queryString.slice(1));
             // Simple check to see if it looks like a URL
             if (legacyUrl.startsWith('http')) {

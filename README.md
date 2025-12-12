@@ -77,7 +77,7 @@ Integration of [3DHOP](https://3dhop.net/) framework.
 
 Supported model formats: .ply, .obj
 
-![image](https://github.com/user-attachments/assets/153f06ab-855b-4989-b06a-73cef84cc0f0)
+<img width="1893" height="1051" alt="image" src="https://github.com/user-attachments/assets/81f766a1-5d9f-45c8-adb8-31132892e803" />
 
 #### Test
 
@@ -93,7 +93,7 @@ Integration of [UH4D Browser](https://4dbrowser.org).
 
 Supported model formats: .json (IIIF manifest)
 
-<img width="1891" height="1051" alt="image" src="https://github.com/user-attachments/assets/7060265d-a069-4759-a83d-c106c4d49eb8" />
+<img width="1889" height="1049" alt="image" src="https://github.com/user-attachments/assets/36e35480-9621-46df-89fd-8a430b174b16" />
 
 #### Test
 

@@ -209,11 +209,13 @@ Supported model formats: .glb, .gltf
 
 #### Test
 
+##### 3dtest.dfg-viewer.de
+
 https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-jena-3dviewer-vrglasses
 
-##### GitHub Runner Testsystem
+##### local
 
-https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-jena-3dviewer-vrglasses
+http://localhost/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-jena-3dviewer-vrglasses
 
 ### dlf-kompakkt
 
@@ -225,11 +227,13 @@ Supported model formats: .glb, .babylon, .gltf, .obj, .stl
 
 #### Test
 
+##### 3dtest.dfg-viewer.de
+
 https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-kompakkt
 
-##### GitHub Runner Testsystem
+##### local
 
-https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-kompakkt
+http://localhost/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-kompakkt
 
 ### dlf-model-viewer
 
@@ -243,19 +247,21 @@ Supported model formats: .glb, .gltf
 
 #### Test
 
+##### 3dtest.dfg-viewer.de
+
 Default of viewer Kitodo.Presentation and with that DFG-Viewer
 https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml
 
 Use the model viewer from the Integration repository
 https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-model-viewer
 
-##### GitHub Runner Testsystem
+##### local
 
 Default of viewer Kitodo.Presentation and with that DFG-Viewer
-https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml
+http://localhost/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml
 
 Use the model viewer from the Integration repository
-https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-model-viewer
+http://localhost/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-model-viewer
 
 ### dlf-pcss-viewer
 
@@ -265,11 +271,13 @@ Supported model formats: .glb, .gltf, .obj
 
 #### Test
 
+##### 3dtest.dfg-viewer.de
+
 https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-pcss-viewer
 
-##### GitHub Runner Testsystem
+##### local
 
-https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-pcss-viewer
+https://localhost/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-pcss-viewer
 
 ### dlf-threejs
 
@@ -279,13 +287,13 @@ Supported model formats: .ply
 
 ![image](https://github.com/user-attachments/assets/ed8a6993-1c31-45dd-8b02-88652979ce53)
 
-#### Test
+##### 3dtest.dfg-viewer.de
 
 https://3dtest.dfg-viewer.de/viewer?tx_dlf[model]=https://3dtest.dfg-viewer.de/fileadmin/models/gargo.ply&tx_dlf[viewer]=dlf-threejs
 
-##### GitHub Runner Testsystem
+##### local
 
-https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[model]=https://bear-genuine-hookworm.ngrok-free.app/fileadmin/models/gargo.ply&tx_dlf[viewer]=dlf-threejs
+http://localhost/viewer?tx_dlf[model]=http://localhost/fileadmin/models/examples/ply/gargo.ply&tx_dlf[viewer]=dlf-threejs
 
 ## DFG 3D-Viewer test system
 

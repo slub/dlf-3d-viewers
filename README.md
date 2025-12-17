@@ -277,7 +277,7 @@ https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmo
 
 ##### local
 
-https://localhost/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-pcss-viewer
+http://localhost/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-pcss-viewer
 
 ### dlf-threejs
 

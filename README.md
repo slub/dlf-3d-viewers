@@ -101,11 +101,13 @@ Supported model formats: .json (IIIF manifest)
 
 #### Test
 
-https://3dtest.dfg-viewer.de/viewer?tx_dlf%5Bmodel%5D=https%3A%2F%2Fzenodo.org%2Frecords%2F17391252%2Ffiles%2F86fc8419401c9a8ciiifmanifest.json&tx_dlf%5Bviewer%5D=dlf-4dbrowser
+##### 3dtest.dfg-viewer.de
 
-##### GitHub Runner Testsystem
+https://3dtest.dfg-viewer.de/viewer?tx_dlf%5Bmodel%5D=https%3A%2F%2Fzenodo.org%2Frecords%2F17391252%2Ffiles%2F86fc8419401c9a8ciiifmanifest.json&tx_dlf[viewer]=dlf-4dbrowser
 
-https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf%5Bmodel%5D=https%3A%2F%2Fzenodo.org%2Frecords%2F17391252%2Ffiles%2F86fc8419401c9a8ciiifmanifest.json&tx_dlf%5Bviewer%5D=dlf-4dbrowser
+##### Local
+
+http://localhost/viewer?tx_dlf%5Bmodel%5D=https%3A%2F%2Fzenodo.org%2Frecords%2F17391252%2Ffiles%2F86fc8419401c9a8ciiifmanifest.json&tx_dlf[viewer]=dlf-4dbrowser
 
 ### dlf-aim-3d
 

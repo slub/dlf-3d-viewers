@@ -69,7 +69,7 @@ Supported model formats: .glb
 
 https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-3dbigdataspace-viewer
 
-##### Local
+##### local
 
 http://localhost/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-3dbigdataspace-viewer
 
@@ -87,7 +87,7 @@ Supported model formats: .ply, .obj
 
 https://3dtest.dfg-viewer.de/viewer?tx_dlf[model]=https://3dtest.dfg-viewer.de/fileadmin/models/gargo.ply&tx_dlf[viewer]=dlf-3dhop
 
-##### Local
+##### local
 
 http://localhost/viewer?tx_dlf[model]=http://localhost/fileadmin/models/examples/ply/gargo.ply&tx_dlf[viewer]=dlf-3dhop
 
@@ -105,7 +105,7 @@ Supported model formats: .json (IIIF manifest)
 
 https://3dtest.dfg-viewer.de/viewer?tx_dlf%5Bmodel%5D=https%3A%2F%2Fzenodo.org%2Frecords%2F17391252%2Ffiles%2F86fc8419401c9a8ciiifmanifest.json&tx_dlf[viewer]=dlf-4dbrowser
 
-##### Local
+##### local
 
 http://localhost/viewer?tx_dlf%5Bmodel%5D=https%3A%2F%2Fzenodo.org%2Frecords%2F17391252%2Ffiles%2F86fc8419401c9a8ciiifmanifest.json&tx_dlf[viewer]=dlf-4dbrowser
 
@@ -119,11 +119,13 @@ Supported model formats: .obj, .dae, .fbx, .ply, .ifc, .stl, .xyz, .json, .3ds, 
 
 #### Test
 
+##### 3dtest.dfg-viewer.de
+
 https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-aim-3d
 
-##### GitHub Runner Testsystem
+##### local 
 
-https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-aim-3d
+http://localhost/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-aim-3d
 
 ### dlf-aton
 
@@ -135,11 +137,13 @@ Supported model formats: .glb, .gltf
 
 #### Test
 
+##### 3dtest.dfg-viewer.de
+
 https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-aton
 
-##### GitHub Runner Testsystem
+##### local 
 
-https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-aton
+http://localhost/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-aton
 
 ### dlf-jena-3dviewer-gaussiansplat
 
@@ -151,11 +155,13 @@ Supported model formats: .html
 
 #### Test
 
+##### 3dtest.dfg-viewer.de
+
 https://3dtest.dfg-viewer.de/viewer?tx_dlf[model]=https://lumalabs.ai/capture/059f25eb-e543-4404-9cd6-fc5c83c2442e&tx_dlf[modelFormat]=html&tx_dlf[viewer]=dlf-jena-3dviewer-gaussiansplat
 
-##### GitHub Runner Testsystem
+##### local
 
-https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[model]=https://lumalabs.ai/capture/059f25eb-e543-4404-9cd6-fc5c83c2442e&tx_dlf[modelFormat]=html&tx_dlf[viewer]=dlf-jena-3dviewer-gaussiansplat
+http://localhost/viewer?tx_dlf[model]=https://lumalabs.ai/capture/059f25eb-e543-4404-9cd6-fc5c83c2442e&tx_dlf[modelFormat]=html&tx_dlf[viewer]=dlf-jena-3dviewer-gaussiansplat
 
 ### dlf-jena-3dviewer-holopyramid
 
@@ -167,11 +173,13 @@ Supported model formats: .glb, .gltf
 
 #### Test
 
+##### 3dtest.dfg-viewer.de
+
 https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-jena-3dviewer-holopyramid
 
-##### GitHub Runner Testsystem
+##### local
 
-https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-jena-3dviewer-holopyramid
+http://localhost/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-jena-3dviewer-holopyramid
 
 ### dlf-jena-3dviewer-ply-pointcloud
 

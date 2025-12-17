@@ -65,11 +65,13 @@ Supported model formats: .glb
 
 #### Test
 
+##### 3dtest.dfg-viewer.de
+
 https://3dtest.dfg-viewer.de/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-3dbigdataspace-viewer
 
-##### GitHub Runner Testsystem
+##### Local
 
-https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-3dbigdataspace-viewer
+http://localhost/viewer?tx_dlf[id]=https://data.3drepo.eu/xml/metsmods/b5df7cd550f64e818943ad96fff7e902metsmods.xml&tx_dlf[viewer]=dlf-3dbigdataspace-viewer
 
 ### dlf-3dhop
 
@@ -81,11 +83,13 @@ Supported model formats: .ply, .obj
 
 #### Test
 
+##### 3dtest.dfg-viewer.de
+
 https://3dtest.dfg-viewer.de/viewer?tx_dlf[model]=https://3dtest.dfg-viewer.de/fileadmin/models/gargo.ply&tx_dlf[viewer]=dlf-3dhop
 
-##### GitHub Runner Testsystem
+##### Local
 
-https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[model]=https://bear-genuine-hookworm.ngrok-free.app/fileadmin/models/gargo.ply&tx_dlf[viewer]=dlf-3dhop
+http://localhost/viewer?tx_dlf[model]=http://localhost/fileadmin/models/examples/ply/gargo.ply&tx_dlf[viewer]=dlf-3dhop
 
 ### dlf-4dbrowser
 

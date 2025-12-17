@@ -191,11 +191,13 @@ Supported model formats: .ply
 
 #### Test
 
+##### 3dtest.dfg-viewer.de
+
 https://3dtest.dfg-viewer.de/viewer?tx_dlf[model]=https://3dtest.dfg-viewer.de/fileadmin/models/gargo.ply&tx_dlf[viewer]=dlf-jena-3dviewer-ply-pointcloud
 
-##### GitHub Runner Testsystem
+##### local
 
-https://bear-genuine-hookworm.ngrok-free.app/viewer?tx_dlf[model]=https://bear-genuine-hookworm.ngrok-free.app/fileadmin/models/gargo.ply&tx_dlf[viewer]=dlf-jena-3dviewer-ply-pointcloud
+http://localhost/viewer?tx_dlf[model]=http://localhost/fileadmin/models/examples/ply/gargo.ply&tx_dlf[viewer]=dlf-jena-3dviewer-ply-pointcloud
 
 ### dlf-jena-3dviewer-vrglasses
 

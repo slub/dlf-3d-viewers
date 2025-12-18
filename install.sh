@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Check if unzip and wget is installed
+for cmd in unzip wget; do
+  if ! command -v "$cmd" >/dev/null 2>&1; then
+    echo "Error: '$cmd' is not installed."
+    exit 1
+  fi
+done
+
 DLF_3DHOP_VERSION="4.3"
 DLF_ATON_VERSION="3.0.10"
 DLF_KOMPAKKT_STANDALONE_VERSION="main"

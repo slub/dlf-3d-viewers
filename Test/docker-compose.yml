@@ -1,8 +1,6 @@
 services:
   app:
     image: ${APP_IMAGE}
-    build:
-        context: build
     environment:
       DB_HOST: ${DB_HOST}
       T3_USER: ${APP_T3_USER}

@@ -12,7 +12,7 @@ DLF_3DHOP_VERSION="4.3"
 DLF_ATON_VERSION="3.0.10"
 DLF_KOMPAKKT_STANDALONE_VERSION="main"
 DLF_MODEL_VIEWER_VERSION="4.0.0"
-DLF_THEDWORAK_DFG_3DVIEWER_VERSION="npm-refactor-update-test"
+DLF_THEDWORAK_DFG_3DVIEWER_VERSION="stable-release"
 DLF_THREEJS_VERSION="r170"
 
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
@@ -50,8 +50,6 @@ install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_TH
 install_zip_module "https://github.com/phoenixbf/aton/archive/refs/tags/$DLF_ATON_VERSION.zip" "dlf-aton"
 
 install_zip_module "https://github.com/thedworak/dfg_3dviewer/archive/refs/heads/$DLF_THEDWORAK_DFG_3DVIEWER_VERSION.zip" "dlf-aim-3d"
-# unzip the provided branch distribution into the modules directory for use
-unzip -d "$SCRIPT_DIR/dlf-aim-3d/modules/dfg_3dviewer-$DLF_THEDWORAK_DFG_3DVIEWER_VERSION-dist" "$SCRIPT_DIR/dlf-aim-3d/modules/dfg_3dviewer-$DLF_THEDWORAK_DFG_3DVIEWER_VERSION/dfg_3dviewer-dist.zip"
 
 install_lib_module "https://ajax.googleapis.com/ajax/libs/model-viewer/$DLF_MODEL_VIEWER_VERSION/model-viewer.min.js" "dlf-model-viewer" "model-viewer/$DLF_MODEL_VIEWER_VERSION"
 

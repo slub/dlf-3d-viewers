@@ -297,17 +297,11 @@ http://localhost/viewer?tx_dlf[model]=http://localhost/fileadmin/models/examples
 
 ## DFG 3D-Viewer test system
 
-If you have write permissions for this repository, you can start a DFG Viewer test system that includes the latest versions of the available integrations. **Please check beforehand if the test system https://bear-genuine-hookworm.ngrok-free.app/ is already running.**
+After moving the DFG Viewer into a Docker image, it’s now possible to run the DFG Viewer with integrations locally.
 
-Under `Actions` tab above, you will find the workflow named `Run DFG-Viewer test system over ngrok`. By clicking on it, a `Run workflow` button will appear in the upper-right area above the list of recent workflow executions. When clicking on this button, a popup opens. Click the green button with the label `Run workflow` in the popup.
+The legacy test URLs of the viewer integrations have been replaced with URLs pointing to the local environment and only work when the local environment is running.
 
-![image](https://github.com/user-attachments/assets/c07eb48b-1186-4655-a966-10c35094c385)
-
-It takes a moment for the starting workflow to be displayed. Reloading the page can make it appear faster.
-
-![image](https://github.com/user-attachments/assets/c336c461-f9d8-4979-b998-725b8d8fbd02)
-
-After a short time (1-2 minutes), the test system was generated and is accessible at the URL https://bear-genuine-hookworm.ngrok-free.app/ for one hour. After that, the test system will be automatically stopped.
+You can find the documentation to run the local environment here. https://github.com/slub/dlf-3d-viewers/tree/main/Test
 
 ## Further information
 

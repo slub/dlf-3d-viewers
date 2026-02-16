@@ -1,0 +1,5 @@
+viewer:
+ name: 3DView for Holostand (Jena)
+ supportedModelFormats:
+  - glb
+  - gltf

@@ -33,6 +33,8 @@ install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_TH
 
 install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_THREEJS_VERSION.zip" "dlf-jena-3dviewer-holopyramid"
 
+install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_THREEJS_VERSION.zip" "dlf-jena-3dviewer-holostand"
+
 install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_THREEJS_VERSION.zip" "dlf-jena-3dviewer-ply-pointcloud"
 
 install_zip_module "https://github.com/mrdoob/three.js/archive/refs/tags/$DLF_THREEJS_VERSION.zip" "dlf-jena-3dviewer-vrglasses"

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>three.js webgl - multiple views</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <style>
+        body {
+            background-color: rgb(18, 18, 18);
+        }
+        .logo {
+            overflow-y: auto;
+            position: absolute;
+            top: 20 Px;
+            right: 120Px;
+            width: 100px;
+            height: 100px;
+            background-color: #246;
+            border-radius: 0%;
+            border-width: 0px; /*Optional*/
+            display: inline-block;
+
+        }
+    </style>
+</head>
+<body>
+<div id="info">
+    <button onclick="enterFullscreen(document.documentElement); " style = "position: absolute; left: 10 px; bottom: 10px;">Enter Fullscreen</button>
+    <a class="logo" href="https://5dculture.eu"></a><img class="logo" src="./{{viewerPath}}assets/5dculture.png" alt=""
+                                                         style="width:100px;height:100px;" /></a>
+</div>
+<div id="container"></div>
+<script type="importmap">
+    {
+        "imports": {
+            "three": "./{{viewerPath}}modules/three.js-r170/build/three.module.js",
+            "three/addons/": "./jsm/"
+        }
+    }
+</script>
+
+<!-- <script>
+    function enterFullscreen(element) {
+        document.getElementById("info").style.visibility = 'hidden';
+        if (element.requestFullscreen) {
+            element.requestFullscreen();
+        } else if (element.msRequestFullscreen) {      // for IE11 (remove June 15, 2022)
+            element.msRequestFullscreen();
+        } else if (element.webkitRequestFullscreen) {  // iOS Safari
+            element.webkitDisplayingFullscreen();
+        }
+
+    }
+
+    function exitFullscreen() {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        }
+    }
+
+</script>
+<script type="module">
+    import * as THREE from './{{viewerPath}}modules/three.js-r170/build/three.module.js';
+    import {GLTFLoader} from './{{viewerPath}}modules/three.js-r170/examples/jsm/loaders/GLTFLoader.js'
+    let scene, renderer;
+    let mouseX = 0, mouseY = 0;
+    let windowWidth, windowHeight, windowWidthTemp, windowHeigthTemp;
+
+    const views = [
+        { //Top
+            left: 0.33,
+            bottom: 0.66,
+            width: 0.33,
+            height: 0.33,
+            background: new THREE.Color().setRGB(0,1,0.5, THREE.SRGBColorSpace),
+            eye: [-1.2, 0, 0],
+            up: [0, -1, 0],
+            fov: 60,
+            updateCamera: function (camera, scene, mouseX) {
+
+                camera.position.x += mouseX * 0.05;
+                camera.position.x = Math.max(Math.min(camera.position.x, 2000), - 2000);
+                camera.lookAt(scene.position);
+
+            }
+        },
+        { //Right
+            left: 0.66,
+            bottom: 0.33,
+            width: 0.33,
+            height: 0.33,
+            background: new THREE.Color().setRGB(0, 0, 0, THREE.SRGBColorSpace),
+            eye: [0, 0, 1.2],
+            up: [0, 0, -1],
+            fov: 60,
+            updateCamera: function (camera, scene, mouseX) {
+
+                camera.position.x -= mouseX * 0.05;
+                camera.position.x = Math.max(Math.min(camera.position.x, 2000), - 2000);
+                camera.lookAt(camera.position.clone().setY(0));
+
+            }
+        },
+        { //Bottom
+            left: 0.33,
+            bottom: 0,
+            width: 0.33,
+            height: 0.33,
+            background: new THREE.Color().setRGB(0, 0, 0, THREE.SRGBColorSpace),
+            eye: [1.2, 0, 0],
+            up: [0, 1, 0],
+            fov: 60,
+            updateCamera: function (camera, scene, mouseX) {
+
+                camera.position.y -= mouseX * 0.05;
+                camera.position.y = Math.max(Math.min(camera.position.y, 1600), - 1600);
+                camera.lookAt(scene.position);
+
+            }
+        },
+        { //Left
+            left: 0,
+            bottom: 0.33,
+            width: 0.33,
+            height: 0.33,
+            background: new THREE.Color().setRGB(0, 0, 0, THREE.SRGBColorSpace),
+            eye: [0, 0, -1.2],
+            up: [0, 0, 1],
+            fov: 60,
+            updateCamera: function (camera, scene, mouseX) {
+                camera.position.y -= mouseX * 0.05;
+                camera.position.y = Math.max(Math.min(camera.position.y, 1600), - 1600);
+                camera.lookAt(scene.position);
+
+            }
+        }
+    ];
+
+    init();
+
+    function init() {
+        const container = document.getElementById('container');
+
+        scene = new THREE.Scene();
+
+        //Light
+        const ambientlight = new THREE.AmbientLight(0x555555);
+        ambientlight.position.set(0, 0, 0);
+        scene.add(ambientlight);
+
+        const light = new THREE.DirectionalLight(0xffffff, 3);
+        light.position.set(0, 0, 1);
+        scene.add(light);
+
+        //Shadow
+        const canvas = document.createElement('canvas');
+        canvas.width = 128;
+        canvas.height = 128;
+        const context = canvas.getContext('2d');
+        const gradient = context.createRadialGradient(canvas.width / 2, canvas.height / 2, 0, canvas.width / 2, canvas.height / 2, canvas.width / 2);
+        gradient.addColorStop(0.1, 'rgba(0,0,0,0.15)');
+        gradient.addColorStop(1, 'rgba(0,0,0,0)');
+
+        context.fillStyle = gradient;
+        context.fillRect(0, 0, canvas.width, canvas.height);
+
+        //Query URL
+        const queryString = window.location.search;
+        const url = decodeURIComponent(queryString.slice(1));
+        console.log('String: ' + url);
+
+        //Load Object
+        let DimensionMultiplier =1;
+        const loader = new GLTFLoader();
+        const urlParams = new URLSearchParams( window.location.search);
+        loader.load(urlParams.get('model'), function (gltf) {
+            var bbox = new THREE.Box3().setFromObject(gltf.scene);
+
+            //Calculate largest value of bounding box and set it as Camera Distance
+            var DimensionX = (bbox.max.x-bbox.min.x);
+            var DimensionY = (bbox.max.y-bbox.min.y);
+            var DimensionZ = (bbox.max.z-bbox.min.z);
+            var CenterX=(bbox.max.x-DimensionX/2);
+            var CenterY=(bbox.max.y-DimensionY/2);
+            var CenterZ=(bbox.max.z-DimensionZ/2);
+            DimensionMultiplier=((DimensionX > DimensionY && DimensionX > DimensionZ? DimensionX : (DimensionY > DimensionZ ? DimensionY : DimensionZ)));
+
+            //Center Position
+            gltf.scene.position.set(-CenterX, -CenterY, -CenterZ);
+            scene.add(gltf.scene);
+
+            // for (let ii = 0; ii < views.length; ++ii) {
+            //     const view = views[ii];
+            //     const camera = new THREE.PerspectiveCamera(view.fov, window.innerWidth / window.innerHeight, 1, 10000);
+            //     camera.position.fromArray(view.eye.map(function(element) {return element * DimensionMultiplier}));
+            //     console.log(camera.position);
+            //     camera.up.fromArray(view.up);
+            //     view.camera = camera;
+            // }
+        })
+
+        //Renderer
+        renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setAnimationLoop(animate);
+        container.appendChild(renderer.domElement);
+    };
+
+    function updateSize() {
+        if (windowWidth != window.innerWidth || windowHeight != window.innerHeight) {
+            windowWidth = window.innerWidth;
+            windowHeight = window.innerHeight;
+            if (windowWidth > windowHeight) {
+                windowWidthTemp = windowWidth;
+                windowWidth = windowHeight;
+
+            } else {
+                windowHeigthTemp = windowHeight;
+                windowHeight = windowWidth;
+            }
+            renderer.setSize(windowWidth, windowHeight);
+            const Container=document.getElementById("container");
+            const ContainerProperties=Container.getBoundingClientRect();
+            //var ContainerHeight=document.getElementsById("container").getBoundingClientRect().height;
+
+            Container.style.position = "absolute";
+            if (ContainerProperties.width>ContainerProperties.height){
+                Container.style.left=(ContainerProperties.width/2-ContainerProperties.height/2)+'px';
+                Container.style.top='0 px';
+            } else {
+                Container.style.top=(ContainerProperties.height/2-ContainerProperties.width/2)+'px';
+                Container.style.left='0 px';
+            };
+        }
+    }
+
+    function animate() {
+        requestAnimationFrame(animate);
+        var time = Date.now() * 0.001;
+        scene.rotation.y = time;
+        //scene.rotation.z = 0.5* ( 1 +  Math.sin( time ) );
+        render();
+    }
+
+    function render() {
+        updateSize();
+        for (let ii = 0; ii < views.length; ++ii) {
+
+            const view = views[ii];
+            const camera = view.camera;
+
+            view.updateCamera(camera, scene, mouseX, mouseY);
+
+            const left =Math.floor(windowWidth * view.left);
+
+            const bottom = Math.floor(windowHeight * view.bottom);
+            const width = Math.floor(windowWidth * view.width);
+            const height = Math.floor(windowHeight * view.height);
+
+            renderer.setViewport(left, bottom, width, height);
+            renderer.setScissor(left, bottom, width, height);
+            renderer.setScissorTest(true);
+            renderer.setClearColor(view.background);
+
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+
+            renderer.render(scene, camera);
+
+        }
+
+    }
+</script> -->
+
+<script type="module">
+    import * as THREE from './{{viewerPath}}modules/three.js-r170/build/three.module.js';
+    import { GLTFLoader } from './{{viewerPath}}modules/three.js-r170/examples/jsm/loaders/GLTFLoader.js';
+
+    let scene, camera, renderer;
+    let model;
+
+    init();
+    animate();
+
+    function init() {
+        const container = document.getElementById('container');
+
+        // Szene
+        scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x000000); // blauer Hintergrund
+
+        // Kamera
+        camera = new THREE.PerspectiveCamera(
+            45,
+            window.innerWidth / window.innerHeight,
+            0.1,
+            10000
+        );
+        camera.position.set(0, 1.5, 3);
+
+        // Licht (simpel & stabil)
+        scene.add(new THREE.AmbientLight(0xffffff, 0.8));
+
+        const dirLight = new THREE.DirectionalLight(0xffffff, 1.2);
+        dirLight.position.set(3, 5, 2);
+        scene.add(dirLight);
+
+        // Renderer
+        renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        container.appendChild(renderer.domElement);
+
+        // Modell laden (gleicher Loader wie bei dir)
+        const loader = new GLTFLoader();
+        const urlParams = new URLSearchParams(window.location.search);
+        const modelUrl = urlParams.get('model');
+
+        loader.load(modelUrl, (gltf) => {
+            model = gltf.scene;
+
+            const box = new THREE.Box3().setFromObject(model);
+            const size = box.getSize(new THREE.Vector3());
+            const center = box.getCenter(new THREE.Vector3());
+
+            // Modell zentrieren
+            model.position.sub(center);
+
+            scene.add(model);
+
+            // Kamera automatisch passend einstellen
+            const maxDim = Math.max(size.x, size.y, size.z);
+            const fov = THREE.MathUtils.degToRad(camera.fov);
+
+            let cameraZ = Math.abs(maxDim / 2 / Math.tan(fov / 2));
+            cameraZ *= 1.3; // etwas Luft
+
+            camera.position.set(0, 0, cameraZ);
+            camera.near = cameraZ / 100;
+            camera.far = cameraZ * 100;
+            camera.updateProjectionMatrix();
+
+            camera.lookAt(0, 0, 0);
+        });
+
+
+        window.addEventListener('resize', onResize);
+    }
+
+    function animate() {
+        requestAnimationFrame(animate);
+
+        if (model) {
+            model.rotation.y += 0.005;
+        }
+
+        renderer.render(scene, camera);
+    }
+
+    function onResize() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+</script>
+
+
+</body>
+</html>
